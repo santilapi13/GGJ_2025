@@ -22,7 +22,7 @@ func update_fisica(delta):
 	eje_y = sign(Input.get_axis("up","down"))
 
 func entrar():
-	pass
+	print("Entro " + name)
 
 func salir():
-	pass
+	print("Salio " + name)
