@@ -1,6 +1,5 @@
 extends Bebida
 
-@onready var jugador = get_parent().get_parent()
 const PREFAB_CORCHO: String = ""
 
 func descorchar():

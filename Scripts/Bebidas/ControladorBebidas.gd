@@ -13,7 +13,7 @@ var bebida_actual
 var cola_bebidas: Array = []	# Referencias a las siguientes bebidas levantadas
 
 func _ready():
-	bebida_actual = bebidas_posibles[Bebidas.SIFON]
+	bebida_actual = bebidas_posibles[Bebidas.GASEOSA]
 
 func usar_poder():
 	bebida_actual.usar_poder()

@@ -9,7 +9,7 @@ func activarse():
 	super()
  
 func desactivarse():
-	pass
+	maquina_de_estados.cambiar_estado(estado_cayendo)
 
 func update_fisica(delta):
 	var eje_x =  sign(Input.get_axis("left","rigth"))
@@ -19,3 +19,4 @@ func update_fisica(delta):
 		jugador.velocity.y = fuerza_de_salto
 	else:
 		maquina_de_estados.cambiar_estado(estado_cayendo)
+
