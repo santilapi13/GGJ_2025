@@ -17,7 +17,8 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-SistemaAudio="*res://Scenes/sistema_audio.tscn"
+SistemaAudio="*res://Scenes/Autoloads/sistema_audio.tscn"
+SistemaJuego="*res://Scenes/Autoloads/sistema_juego.tscn"
 
 [input]
 

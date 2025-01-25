@@ -1,0 +1,44 @@
+[gd_scene load_steps=6 format=3 uid="uid://ci4dfgg7ydhkn"]
+
+[ext_resource type="PackedScene" uid="uid://y012ctmcp5j3" path="res://Scenes/Sodero.tscn" id="1_am1it"]
+[ext_resource type="Script" path="res://Scripts/nivel.gd" id="1_e22bm"]
+[ext_resource type="PackedScene" uid="uid://bngfo7rvs72l3" path="res://Scenes/Suelo.tscn" id="2_33p7i"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rdoln"]
+radius = 12.0
+height = 42.0
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_ja815"]
+
+[node name="Nivel1" type="Node"]
+script = ExtResource("1_e22bm")
+
+[node name="PuntoInicio" type="Marker2D" parent="."]
+position = Vector2(58, 61)
+
+[node name="PuntoDestino" type="Area2D" parent="."]
+position = Vector2(43, 52)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PuntoDestino"]
+position = Vector2(503, 156)
+shape = SubResource("CapsuleShape2D_rdoln")
+
+[node name="Sprite2D" type="Sprite2D" parent="PuntoDestino"]
+position = Vector2(502.5, 156)
+scale = Vector2(23, 40)
+texture = SubResource("CanvasTexture_ja815")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+anchor_mode = 0
+zoom = Vector2(2, 2)
+
+[node name="Jugador" parent="." instance=ExtResource("1_am1it")]
+position = Vector2(120, 52)
+
+[node name="Node2D2" parent="." instance=ExtResource("2_33p7i")]
+position = Vector2(404, 268)
+
+[node name="Node2D3" parent="." instance=ExtResource("2_33p7i")]
+position = Vector2(44, 113)
+
+[connection signal="body_entered" from="PuntoDestino" to="." method="llegar_a_destino"]

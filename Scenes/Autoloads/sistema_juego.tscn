@@ -1,0 +1,67 @@
+[gd_scene load_steps=5 format=3 uid="uid://csleaciwrlwku"]
+
+[ext_resource type="Script" path="res://Scripts/SistemaJuego.gd" id="1_phvgn"]
+
+[sub_resource type="Animation" id="Animation_ra7s4"]
+resource_name = "mostrar"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Fondo:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.6),
+"transitions": PackedFloat32Array(1, 0.554785),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 0.886275)]
+}
+
+[sub_resource type="Animation" id="Animation_owfcm"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Fondo:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_os4vk"]
+_data = {
+"RESET": SubResource("Animation_owfcm"),
+"mostrar": SubResource("Animation_ra7s4")
+}
+
+[node name="SistemaJuego" type="Control"]
+z_index = 1
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 6
+size_flags_vertical = 10
+script = ExtResource("1_phvgn")
+
+[node name="Fondo" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(41.92, 4)
+color = Color(0, 0, 0, 0)
+
+[node name="Transicion" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_os4vk")
+}
