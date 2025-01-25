@@ -9,7 +9,6 @@ extends Estado
 
 func update_fisica(delta):
 	var eje_x =  sign(Input.get_axis("left","rigth"))
-	print(eje_x)
 	jugador.velocity.y += gravedad
 	
 	jugador.velocity.x = velocidad_maxima * eje_x
@@ -22,5 +21,4 @@ func update_fisica(delta):
 
 
 func salir():
-	super()
 	jugador.velocity.y = 0

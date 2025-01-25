@@ -18,7 +18,7 @@ func update_fisica(delta):
 	pass
 
 func entrar():
-	print("Entro " + name)
+	pass
 
 func salir():
-	print("Salio " + name)
+	pass

@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://y012ctmcp5j3"]
+[gd_scene load_steps=14 format=3 uid="uid://y012ctmcp5j3"]
 
 [ext_resource type="Script" path="res://Scripts/MaquinaDeEstados.gd" id="1_408qs"]
 [ext_resource type="Script" path="res://Scripts/Jugador.gd" id="1_iixeo"]
@@ -6,14 +6,20 @@
 [ext_resource type="Script" path="res://Scripts/Estados/Quieto.gd" id="2_j057j"]
 [ext_resource type="Script" path="res://Scripts/Estados/Caminando.gd" id="3_02dre"]
 [ext_resource type="Script" path="res://Scripts/Estados/Cayendo.gd" id="6_wies2"]
-[ext_resource type="PackedScene" path="res://Scenes/controlador_bebidas.tscn" id="7_c6l2r"]
+[ext_resource type="PackedScene" uid="uid://cxj0jt6bpwro0" path="res://Scenes/controlador_bebidas.tscn" id="7_c6l2r"]
+[ext_resource type="Script" path="res://Scripts/Estados/EstadosBebidas/SinBebida.gd" id="7_urjge"]
+[ext_resource type="Script" path="res://Scripts/Bebidas/Bebida.gd" id="8_r6fr7"]
+[ext_resource type="Script" path="res://Scripts/Bebidas/Sifon.gd" id="9_pvcpu"]
+[ext_resource type="Script" path="res://Scripts/Bebidas/Gaseosa.gd" id="10_sxd80"]
+[ext_resource type="Script" path="res://Scripts/Bebidas/Champagne.gd" id="11_36tl1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2kdpt"]
 size = Vector2(0.99482, 0.541854)
 
-[node name="Node2D" type="CharacterBody2D" node_paths=PackedStringArray("maquina_de_estados")]
+[node name="Node2D" type="CharacterBody2D" node_paths=PackedStringArray("maquina_de_estados", "controlador_de_bebidas")]
 script = ExtResource("1_iixeo")
 maquina_de_estados = NodePath("MaquinaDeEstados")
+controlador_de_bebidas = NodePath("ControladorBebidas")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1.99998, 1.46191e-05)
@@ -39,13 +45,36 @@ estado_cayendo = NodePath("../Cayendo")
 script = ExtResource("3_02dre")
 estado_quieto = NodePath("../Quieto")
 estado_cayendo = NodePath("../Cayendo")
-velocidad_maxima = 60.0
+velocidad_maxima = 100.0
 
 [node name="Cayendo" type="Node" parent="MaquinaDeEstados" node_paths=PackedStringArray("estado_quieto", "estado_caminando")]
 script = ExtResource("6_wies2")
 estado_quieto = NodePath("../Quieto")
 estado_caminando = NodePath("../Caminando")
-velocidad_maxima = 30.0
+velocidad_maxima = 100.0
+gravedad = 40.0
+
+[node name="SinBebida" type="Node" parent="MaquinaDeEstados" node_paths=PackedStringArray("estado_cayendo")]
+script = ExtResource("7_urjge")
+fuerza_de_salto = 500
+velocidad_maxima = 100.0
 gravedad = 60.0
+estado_cayendo = NodePath("../Cayendo")
 
 [node name="ControladorBebidas" parent="." instance=ExtResource("7_c6l2r")]
+
+[node name="SinBebida" type="Node" parent="ControladorBebidas" node_paths=PackedStringArray("estado")]
+script = ExtResource("8_r6fr7")
+estado = NodePath("../../MaquinaDeEstados/SinBebida")
+
+[node name="Sifon" type="Node" parent="ControladorBebidas"]
+script = ExtResource("9_pvcpu")
+
+[node name="Gaseosa" type="Node" parent="ControladorBebidas"]
+script = ExtResource("10_sxd80")
+
+[node name="Champagne" type="Node" parent="ControladorBebidas"]
+script = ExtResource("11_36tl1")
+
+[node name="Cerveza" type="Node" parent="ControladorBebidas"]
+script = ExtResource("8_r6fr7")

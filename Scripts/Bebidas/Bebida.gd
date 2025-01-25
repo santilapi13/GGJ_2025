@@ -1,9 +1,9 @@
 extends Node
 class_name Bebida
 
-'''@export'''
-var estado#: EstadoBebida
+@export var estado: EstadoBebida  #EstadoBebida
 @export var codigo_animacion: String
+
 @onready var controlador_bebidas = get_parent()
 var activa = false
 
