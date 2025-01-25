@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://y012ctmcp5j3"]
+[gd_scene load_steps=16 format=3 uid="uid://y012ctmcp5j3"]
 
 [ext_resource type="Script" path="res://Scripts/MaquinaDeEstados.gd" id="1_408qs"]
 [ext_resource type="Script" path="res://Scripts/Jugador.gd" id="1_iixeo"]
@@ -10,6 +10,7 @@
 [ext_resource type="Script" path="res://Scripts/Estados/EstadosBebidas/SinBebidaEstado.gd" id="7_oe8op"]
 [ext_resource type="Script" path="res://Scripts/Estados/EstadosBebidas/SifonEstado.gd" id="8_i5ypm"]
 [ext_resource type="Script" path="res://Scripts/Bebidas/Bebida.gd" id="8_r6fr7"]
+[ext_resource type="Script" path="res://Scenes/GaseosaEstado.gd" id="9_lybl4"]
 [ext_resource type="Script" path="res://Scripts/Bebidas/Sifon.gd" id="9_pvcpu"]
 [ext_resource type="Script" path="res://Scripts/Bebidas/Gaseosa.gd" id="10_sxd80"]
 [ext_resource type="Script" path="res://Scripts/Bebidas/Champagne.gd" id="11_36tl1"]
@@ -17,10 +18,8 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2kdpt"]
 size = Vector2(0.99482, 0.541854)
 
-[node name="Node2D" type="CharacterBody2D" node_paths=PackedStringArray("maquina_de_estados", "controlador_de_bebidas")]
+[node name="Node2D" type="CharacterBody2D"]
 script = ExtResource("1_iixeo")
-maquina_de_estados = NodePath("MaquinaDeEstados")
-controlador_de_bebidas = NodePath("ControladorBebidas")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1.99998, 1.46191e-05)
@@ -53,7 +52,7 @@ script = ExtResource("6_wies2")
 estado_quieto = NodePath("../Quieto")
 estado_caminando = NodePath("../Caminando")
 velocidad_maxima = 100.0
-gravedad = 40.0
+gravedad = 20.0
 
 [node name="SinBebida" type="Node" parent="MaquinaDeEstados" node_paths=PackedStringArray("estado_cayendo")]
 script = ExtResource("7_oe8op")
@@ -67,6 +66,13 @@ script = ExtResource("8_i5ypm")
 velocidad_maxima = 100.0
 estado_cayendo = NodePath("../Cayendo")
 
+[node name="Gaseosa" type="Node" parent="MaquinaDeEstados" node_paths=PackedStringArray("estado_cayendo")]
+script = ExtResource("9_lybl4")
+fuerza_de_salto = 500.0
+velocidad_maxima = 100.0
+gravedad = 40.0
+estado_cayendo = NodePath("../Cayendo")
+
 [node name="ControladorBebidas" parent="." instance=ExtResource("7_c6l2r")]
 
 [node name="SinBebida" type="Node" parent="ControladorBebidas" node_paths=PackedStringArray("estado")]
@@ -75,14 +81,49 @@ estado = NodePath("../../MaquinaDeEstados/SinBebida")
 
 [node name="Sifon" type="Node" parent="ControladorBebidas" node_paths=PackedStringArray("estado")]
 script = ExtResource("9_pvcpu")
-soda_maxima = 5.0
+soda_maxima = 2.0
 estado = NodePath("../../MaquinaDeEstados/Sifon")
 
-[node name="Gaseosa" type="Node" parent="ControladorBebidas"]
+[node name="Gaseosa" type="Node" parent="ControladorBebidas" node_paths=PackedStringArray("estado")]
 script = ExtResource("10_sxd80")
+estado = NodePath("../../MaquinaDeEstados/Gaseosa")
 
 [node name="Champagne" type="Node" parent="ControladorBebidas"]
 script = ExtResource("11_36tl1")
 
 [node name="Cerveza" type="Node" parent="ControladorBebidas"]
 script = ExtResource("8_r6fr7")
+
+[node name="Rays" type="Node2D" parent="."]
+
+[node name="RayCastD1" type="RayCast2D" parent="Rays"]
+position = Vector2(15, -11)
+target_position = Vector2(16, 0)
+
+[node name="RayCastD2" type="RayCast2D" parent="Rays"]
+position = Vector2(15, 10)
+target_position = Vector2(16, 0)
+
+[node name="RayCastA1" type="RayCast2D" parent="Rays"]
+position = Vector2(12, -13)
+target_position = Vector2(0, -16)
+
+[node name="RayCastA2" type="RayCast2D" parent="Rays"]
+position = Vector2(-9, -12)
+target_position = Vector2(0, -16)
+
+[node name="RayCastI1" type="RayCast2D" parent="Rays"]
+position = Vector2(-11, -10)
+target_position = Vector2(-16, 0)
+
+[node name="RayCastI2" type="RayCast2D" parent="Rays"]
+position = Vector2(-11, 10)
+target_position = Vector2(-16, 0)
+
+[node name="RayCastB1" type="RayCast2D" parent="Rays"]
+position = Vector2(-9, 12)
+target_position = Vector2(0, 16)
+
+[node name="RayCastB2" type="RayCast2D" parent="Rays"]
+position = Vector2(13, 12)
+target_position = Vector2(0, 16)
