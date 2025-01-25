@@ -5,9 +5,6 @@ class_name Estado
 var maquina_de_estados
 var jugador: CharacterBody2D
 
-var eje_x
-var eje_y
-
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	maquina_de_estados = get_parent()
@@ -18,8 +15,7 @@ func update(delta):
 	pass
 
 func update_fisica(delta):
-	eje_x =  sign(Input.get_axis("left","rigth"))
-	eje_y = sign(Input.get_axis("up","down"))
+	pass
 
 func entrar():
 	print("Entro " + name)

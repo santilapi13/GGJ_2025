@@ -38,9 +38,9 @@ estado_cayendo = NodePath("../Cayendo")
 script = ExtResource("3_02dre")
 estado_quieto = NodePath("../Quieto")
 estado_cayendo = NodePath("../Cayendo")
-velocidad_maxima = 30.0
-aceleracion = 60.0
-friccion = 120.0
+velocidad_maxima = 60.0
+aceleracion = 120.0
+friccion = 200.0
 
 [node name="Cayendo" type="Node" parent="MaquinaDeEstados" node_paths=PackedStringArray("estado_quieto", "estado_caminando")]
 script = ExtResource("6_wies2")
