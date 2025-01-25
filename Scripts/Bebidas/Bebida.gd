@@ -18,3 +18,7 @@ func descartarse():
 	controlador_bebidas.descartar_bebida()
 
 # TODO: Gestionar animaciones de las manos en base a la bebida actual.
+
+
+func update(delta):
+	pass

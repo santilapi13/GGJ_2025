@@ -59,13 +59,12 @@ gravedad = 40.0
 script = ExtResource("7_oe8op")
 fuerza_de_salto = 500
 velocidad_maxima = 100.0
-gravedad = 60.0
 estado_cayendo = NodePath("../Cayendo")
 
-[node name="Sifon" type="Node" parent="MaquinaDeEstados" node_paths=PackedStringArray("estado_cayendo")]
+[node name="Sifon" type="Node" parent="MaquinaDeEstados"]
 script = ExtResource("8_i5ypm")
+fuerza_de_salto = -10
 velocidad_maxima = 100.0
-estado_cayendo = NodePath("../Cayendo")
 
 [node name="ControladorBebidas" parent="." instance=ExtResource("7_c6l2r")]
 
@@ -75,7 +74,7 @@ estado = NodePath("../../MaquinaDeEstados/SinBebida")
 
 [node name="Sifon" type="Node" parent="ControladorBebidas" node_paths=PackedStringArray("estado")]
 script = ExtResource("9_pvcpu")
-soda_maxima = 5.0
+soda_maxima = 100.0
 estado = NodePath("../../MaquinaDeEstados/Sifon")
 
 [node name="Gaseosa" type="Node" parent="ControladorBebidas"]
