@@ -1,28 +1,41 @@
 extends Node
 
 @export var maximo_reproductores : int = 10
-@onready var reproductor_musica : AudioStreamPlayer2D = $Musica
+var rutas_sfx : Dictionary = {
+	# TODO: Poner pares "nombrePista": "rutaPista"
+}
+var rutas_musica : Dictionary = {
+	# TODO: Poner pares "nombrePista": "rutaPista"
+}
+var pistas_sfx : Dictionary = {}
+var pistas_musica : Dictionary = {}
+@onready var reproductor_musica : AudioStreamPlayer2D = $ReproductorMusica
 var reproductores : Array = []
 
 func _ready():
-	var nodo_reproductores : Node = $Sonidos
+	var nodo_reproductores : Node = $ReproductoresSFX
 	for i in range(maximo_reproductores):
 		var reproductor = AudioStreamPlayer2D.new()
 		nodo_reproductores.add_child(reproductor)
 		reproductores.append(reproductor)
 
-func reproducir_musica(sonido: AudioStream, loop: bool = true):
-	reproductor_musica.stream = sonido
-	reproductor_musica.loop = loop
+	for ruta in rutas_musica:
+		pistas_musica[ruta] = load(rutas_musica[ruta])
+		
+	for ruta in rutas_sfx:
+		pistas_sfx[ruta] = load(rutas_sfx[ruta])
+
+func reproducir_musica(pista: String):
+	reproductor_musica.stream = pistas_musica[pista]
 	reproductor_musica.play()
 	
 func parar_musica():
 	reproductor_musica.stop()
 	
-func reproducir_sonido(sonido: AudioStream, posicion: Vector2 = Vector2.ZERO):
+func reproducir_sonido(sfx: String, posicion: Vector2 = Vector2.ZERO):
 	for reproductor in reproductores:
 		if not reproductor.playing:
-			reproductor.stream = sonido
+			reproductor.stream = pistas_sfx[sfx]
 			reproductor.global_position = posicion
 			reproductor.play()
 			return

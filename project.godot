@@ -11,8 +11,13 @@ config_version=5
 [application]
 
 config/name="GGJ_2025_GODOT"
+run/main_scene="res://Scenes/sistema_audio.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://icon.svg"
+
+[autoload]
+
+SistemaAudio="*res://Scenes/sistema_audio.tscn"
 
 [input]
 
