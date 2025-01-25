@@ -9,8 +9,11 @@ enum Bebidas { SIN_BEBIDA, SIFON, GASEOSA, CHAMPAGNE, CERVEZA }
 	Bebidas.CHAMPAGNE: $Champagne,
 	Bebidas.CERVEZA: $Cerveza
 }
-@onready var bebida_actual = $SinBebida
+var bebida_actual
 var cola_bebidas: Array = []	# Referencias a las siguientes bebidas levantadas
+
+func _ready():
+	levantar_bebida(bebidas_posibles[Bebidas.SIN_BEBIDA])
 
 func usar_poder():
 	bebida_actual.usar_poder()

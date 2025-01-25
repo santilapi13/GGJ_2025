@@ -5,12 +5,16 @@ class_name Bebida
 var estado#: EstadoBebida
 @export var codigo_animacion: String
 @onready var controlador_bebidas = get_parent()
+var activa = false
 
 func prepararse():
-	pass
+	activa = true
 
 func usar_poder():
 	estado.activarse()
 
 func descartarse():
+	activa = false
 	controlador_bebidas.descartar_bebida()
+
+# TODO: Gestionar animaciones de las manos en base a la bebida actual.
