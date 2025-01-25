@@ -1,27 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://cxj0jt6bpwro0"]
+[gd_scene load_steps=2 format=3 uid="uid://cxj0jt6bpwro0"]
 
 [ext_resource type="Script" path="res://Scripts/Bebidas/ControladorBebidas.gd" id="1_goiqt"]
-[ext_resource type="Script" path="res://Scripts/Bebidas/Bebida.gd" id="2_5mm6m"]
-[ext_resource type="Script" path="res://Scripts/Bebidas/Sifon.gd" id="3_m3nac"]
-[ext_resource type="Script" path="res://Scripts/Bebidas/Gaseosa.gd" id="4_gkw0q"]
-[ext_resource type="Script" path="res://Scripts/Bebidas/Champagne.gd" id="5_ychul"]
 
 [node name="ControladorBebidas" type="Node"]
 script = ExtResource("1_goiqt")
-
-[node name="SinBebida" type="Node" parent="."]
-script = ExtResource("2_5mm6m")
-
-[node name="Sifon" type="Node" parent="."]
-script = ExtResource("3_m3nac")
-
-[node name="Gaseosa" type="Node" parent="."]
-script = ExtResource("4_gkw0q")
-
-[node name="Champagne" type="Node" parent="."]
-script = ExtResource("5_ychul")
-
-[node name="Cerveza" type="Node" parent="."]
-script = ExtResource("2_5mm6m")
 
 [connection signal="tree_entered" from="." to="." method="_on_tree_entered"]
