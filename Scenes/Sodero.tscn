@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://y012ctmcp5j3"]
+[gd_scene load_steps=9 format=3 uid="uid://y012ctmcp5j3"]
 
 [ext_resource type="Script" path="res://Scripts/MaquinaDeEstados.gd" id="1_408qs"]
 [ext_resource type="Script" path="res://Scripts/Jugador.gd" id="1_iixeo"]
@@ -6,6 +6,7 @@
 [ext_resource type="Script" path="res://Scripts/Estados/Quieto.gd" id="2_j057j"]
 [ext_resource type="Script" path="res://Scripts/Estados/Caminando.gd" id="3_02dre"]
 [ext_resource type="Script" path="res://Scripts/Estados/Cayendo.gd" id="6_wies2"]
+[ext_resource type="PackedScene" path="res://Scenes/controlador_bebidas.tscn" id="7_c6l2r"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2kdpt"]
 size = Vector2(0.99482, 0.541854)
@@ -39,14 +40,12 @@ script = ExtResource("3_02dre")
 estado_quieto = NodePath("../Quieto")
 estado_cayendo = NodePath("../Cayendo")
 velocidad_maxima = 60.0
-aceleracion = 120.0
-friccion = 200.0
 
 [node name="Cayendo" type="Node" parent="MaquinaDeEstados" node_paths=PackedStringArray("estado_quieto", "estado_caminando")]
 script = ExtResource("6_wies2")
 estado_quieto = NodePath("../Quieto")
 estado_caminando = NodePath("../Caminando")
 velocidad_maxima = 30.0
-aceleracion = 60.0
-friccion = 120.0
 gravedad = 60.0
+
+[node name="ControladorBebidas" parent="." instance=ExtResource("7_c6l2r")]
