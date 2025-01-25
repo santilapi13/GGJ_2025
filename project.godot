@@ -15,6 +15,10 @@ run/main_scene="res://Scenes/Mundo.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://icon.svg"
 
+[autoload]
+
+SistemaAudio="*res://Scenes/sistema_audio.tscn"
+
 [input]
 
 down={

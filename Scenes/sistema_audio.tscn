@@ -5,6 +5,6 @@
 [node name="SistemaAudio" type="Node"]
 script = ExtResource("1_7omgp")
 
-[node name="Musica" type="AudioStreamPlayer2D" parent="."]
+[node name="ReproductorMusica" type="AudioStreamPlayer2D" parent="."]
 
-[node name="Sonidos" type="Node" parent="."]
+[node name="ReproductoresSFX" type="Node" parent="."]
