@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://y012ctmcp5j3"]
+[gd_scene load_steps=7 format=3 uid="uid://y012ctmcp5j3"]
 
 [ext_resource type="Script" path="res://Scripts/MaquinaDeEstados.gd" id="1_408qs"]
+[ext_resource type="Script" path="res://Scripts/Jugador.gd" id="1_iixeo"]
 [ext_resource type="Script" path="res://Scripts/Estados/Quieto.gd" id="2_j057j"]
 [ext_resource type="Script" path="res://Scripts/Estados/Caminando.gd" id="3_02dre"]
 
@@ -9,7 +10,9 @@ size = Vector2(0.248704, 0.101598)
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_qkjok"]
 
-[node name="Node2D" type="CharacterBody2D"]
+[node name="Node2D" type="CharacterBody2D" node_paths=PackedStringArray("maquina_de_estados")]
+script = ExtResource("1_iixeo")
+maquina_de_estados = NodePath("MaquinaDeEstados")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-3.7749e-08, -0.75)
@@ -22,11 +25,17 @@ position = Vector2(-1.42109e-14, 7.10543e-15)
 scale = Vector2(6, 6)
 texture = SubResource("CanvasTexture_qkjok")
 
-[node name="MaquinaDeEstados" type="Node" parent="."]
+[node name="MaquinaDeEstados" type="Node" parent="." node_paths=PackedStringArray("estado_inicial")]
 script = ExtResource("1_408qs")
+estado_inicial = NodePath("Quieto")
 
-[node name="Quieto" type="Node" parent="MaquinaDeEstados"]
+[node name="Quieto" type="Node" parent="MaquinaDeEstados" node_paths=PackedStringArray("estado_caminando")]
 script = ExtResource("2_j057j")
+estado_caminando = NodePath("../Caminando")
 
-[node name="Caminando" type="Node" parent="MaquinaDeEstados"]
+[node name="Caminando" type="Node" parent="MaquinaDeEstados" node_paths=PackedStringArray("estado_quieto")]
 script = ExtResource("3_02dre")
+estado_quieto = NodePath("../Quieto")
+velocidad_maxima = 30.0
+aceleracion = 60.0
+friccion = 120.0
