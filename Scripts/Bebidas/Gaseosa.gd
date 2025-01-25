@@ -9,7 +9,7 @@ func prepararse():
 
 func usar_poder():
 	super()
-	##descartarse()
+	descartarse()
 
 func update(delta):
 	indice_esfervecencia += abs(jugador.velocity.x * 0.25 * delta)
