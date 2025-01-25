@@ -10,7 +10,7 @@
 [ext_resource type="Script" path="res://Scripts/Estados/EstadosBebidas/SinBebidaEstado.gd" id="7_oe8op"]
 [ext_resource type="Script" path="res://Scripts/Estados/EstadosBebidas/SifonEstado.gd" id="8_i5ypm"]
 [ext_resource type="Script" path="res://Scripts/Bebidas/Bebida.gd" id="8_r6fr7"]
-[ext_resource type="Script" path="res://Scenes/GaseosaEstado.gd" id="9_lybl4"]
+[ext_resource type="Script" path="res://Scripts/Estados/EstadosBebidas/GaseosaEstado.gd" id="9_c0qtq"]
 [ext_resource type="Script" path="res://Scripts/Bebidas/Sifon.gd" id="9_pvcpu"]
 [ext_resource type="Script" path="res://Scripts/Bebidas/Gaseosa.gd" id="10_sxd80"]
 [ext_resource type="Script" path="res://Scripts/Bebidas/Champagne.gd" id="11_36tl1"]
@@ -57,9 +57,9 @@ gravedad = 20.0
 [node name="SinBebida" type="Node" parent="MaquinaDeEstados" node_paths=PackedStringArray("estado_cayendo")]
 script = ExtResource("7_oe8op")
 fuerza_de_salto = 500
-velocidad_maxima = 100.0
 gravedad = 60.0
 estado_cayendo = NodePath("../Cayendo")
+velocidad_maxima = 100.0
 
 [node name="Sifon" type="Node" parent="MaquinaDeEstados" node_paths=PackedStringArray("estado_cayendo")]
 script = ExtResource("8_i5ypm")
@@ -67,8 +67,8 @@ velocidad_maxima = 100.0
 estado_cayendo = NodePath("../Cayendo")
 
 [node name="Gaseosa" type="Node" parent="MaquinaDeEstados" node_paths=PackedStringArray("estado_cayendo")]
-script = ExtResource("9_lybl4")
-fuerza_de_salto = 500.0
+script = ExtResource("9_c0qtq")
+fuerza_de_salto = 600.0
 velocidad_maxima = 100.0
 gravedad = 40.0
 estado_cayendo = NodePath("../Cayendo")
