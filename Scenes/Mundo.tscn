@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://deuu4rxfrmfdg"]
+
+[ext_resource type="PackedScene" uid="uid://y012ctmcp5j3" path="res://Scenes/Sodero.tscn" id="1_rp4sh"]
+[ext_resource type="PackedScene" uid="uid://bngfo7rvs72l3" path="res://Scenes/Suelo.tscn" id="2_dispx"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2, 2)
+
+[node name="Node2D" parent="." instance=ExtResource("1_rp4sh")]
+position = Vector2(-166, -93)
+
+[node name="Node2D2" parent="." instance=ExtResource("2_dispx")]
+position = Vector2(118, 123)
+
+[node name="Node2D3" parent="." instance=ExtResource("2_dispx")]
+position = Vector2(-242, -32)
