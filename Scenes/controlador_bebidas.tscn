@@ -1,17 +1,17 @@
 [gd_scene load_steps=4 format=3 uid="uid://drbpnu842hys8"]
 
-[ext_resource type="Script" path="res://ControladorBebidas.gd" id="1_r2rgv"]
-[ext_resource type="Script" path="res://Bebida.gd" id="2_4jrjs"]
-[ext_resource type="Script" path="res://Sifon.gd" id="3_crm14"]
+[ext_resource type="Script" path="res://Scripts/Bebidas/ControladorBebidas.gd" id="1_goiqt"]
+[ext_resource type="Script" path="res://Scripts/Bebidas/Bebida.gd" id="2_5mm6m"]
+[ext_resource type="Script" path="res://Sifon.gd" id="3_m3nac"]
 
 [node name="ControladorBebidas" type="Node"]
-script = ExtResource("1_r2rgv")
+script = ExtResource("1_goiqt")
 
 [node name="SinBebida" type="Node" parent="."]
-script = ExtResource("2_4jrjs")
+script = ExtResource("2_5mm6m")
 
 [node name="Sifon" type="Node" parent="."]
-script = ExtResource("3_crm14")
+script = ExtResource("3_m3nac")
 
 [node name="Gaseosa" type="Node" parent="."]
 
