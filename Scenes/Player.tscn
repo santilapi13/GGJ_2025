@@ -1,4 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://y012ctmcp5j3"]
+[gd_scene load_steps=6 format=3 uid="uid://y012ctmcp5j3"]
+
+[ext_resource type="Script" path="res://Scripts/MaquinaDeEstados.gd" id="1_408qs"]
+[ext_resource type="Script" path="res://Scripts/Estados/Quieto.gd" id="2_j057j"]
+[ext_resource type="Script" path="res://Scripts/Estados/Caminando.gd" id="3_02dre"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2kdpt"]
 size = Vector2(0.248704, 0.101598)
@@ -17,3 +21,12 @@ shape = SubResource("RectangleShape2D_2kdpt")
 position = Vector2(-1.42109e-14, 7.10543e-15)
 scale = Vector2(6, 6)
 texture = SubResource("CanvasTexture_qkjok")
+
+[node name="MaquinaDeEstados" type="Node" parent="."]
+script = ExtResource("1_408qs")
+
+[node name="Quieto" type="Node" parent="MaquinaDeEstados"]
+script = ExtResource("2_j057j")
+
+[node name="Caminando" type="Node" parent="MaquinaDeEstados"]
+script = ExtResource("3_02dre")
