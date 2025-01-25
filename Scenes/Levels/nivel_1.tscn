@@ -1,8 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://ci4dfgg7ydhkn"]
+[gd_scene load_steps=8 format=3 uid="uid://ci4dfgg7ydhkn"]
 
 [ext_resource type="PackedScene" uid="uid://y012ctmcp5j3" path="res://Scenes/Sodero.tscn" id="1_am1it"]
 [ext_resource type="Script" path="res://Scripts/nivel.gd" id="1_e22bm"]
 [ext_resource type="PackedScene" uid="uid://bngfo7rvs72l3" path="res://Scenes/Suelo.tscn" id="2_33p7i"]
+[ext_resource type="PackedScene" uid="uid://ddi8sx3rv5ach" path="res://Scenes/Bebidas/sifon.tscn" id="4_c6q8b"]
+[ext_resource type="PackedScene" uid="uid://crdu7vgfqg37e" path="res://Scenes/Bebidas/gaseosa.tscn" id="5_5e773"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rdoln"]
 radius = 12.0
@@ -40,5 +42,14 @@ position = Vector2(404, 268)
 
 [node name="Node2D3" parent="." instance=ExtResource("2_33p7i")]
 position = Vector2(44, 113)
+
+[node name="Sifon" parent="." instance=ExtResource("4_c6q8b")]
+position = Vector2(196, 58)
+
+[node name="Gaseosa" parent="." instance=ExtResource("5_5e773")]
+position = Vector2(272, 211)
+
+[node name="Sifon2" parent="." instance=ExtResource("4_c6q8b")]
+position = Vector2(391, 209)
 
 [connection signal="body_entered" from="PuntoDestino" to="." method="llegar_a_destino"]

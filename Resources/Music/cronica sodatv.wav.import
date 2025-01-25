@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://blaaf7whb5fyq"
+path="res://.godot/imported/cronica sodatv.wav-75bd6b68327591278856be0797317834.sample"
+
+[deps]
+
+source_file="res://Resources/Music/cronica sodatv.wav"
+dest_files=["res://.godot/imported/cronica sodatv.wav-75bd6b68327591278856be0797317834.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

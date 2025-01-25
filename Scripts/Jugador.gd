@@ -22,3 +22,7 @@ func _physics_process(delta):
 
 func _process(delta):
 	controlador_de_bebidas.update(delta)
+	
+func levantar_bebida(bebida):
+	controlador_de_bebidas.levantar_bebida(bebida)
+

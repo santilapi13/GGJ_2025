@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://rytanwagpmoy"]
+
+[ext_resource type="Texture2D" uid="uid://bpcgpoeoqovfr" path="res://Resources/Sprites/champagne.png" id="1_6iw3f"]
+[ext_resource type="Script" path="res://Scripts/Bebidas/EntidadBebida.gd" id="2_ou2ht"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0j875"]
+radius = 60.0
+height = 340.0
+
+[node name="Champagne" type="Sprite2D"]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_6iw3f")
+script = ExtResource("2_ou2ht")
+tipo_bebida = 3
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CapsuleShape2D_0j875")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

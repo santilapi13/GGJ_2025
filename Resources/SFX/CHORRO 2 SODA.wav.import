@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://wlpf5iujinqg"
+path="res://.godot/imported/CHORRO 2 SODA.wav-7a6122ec0e40db40530f5ad91888aea4.sample"
+
+[deps]
+
+source_file="res://Resources/SFX/CHORRO 2 SODA.wav"
+dest_files=["res://.godot/imported/CHORRO 2 SODA.wav-7a6122ec0e40db40530f5ad91888aea4.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
