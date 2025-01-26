@@ -10,7 +10,3 @@ func _ready():
 func llegar_a_destino(body):
 	if body == jugador:
 		SistemaJuego.siguiente_nivel()
-		
-func zona_muerta(body):
-	if body == jugador:
-		SistemaJuego.reiniciar_nivel()
