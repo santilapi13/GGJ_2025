@@ -13,8 +13,8 @@ func usar_poder():
 	descartarse()
 
 func update(delta):
-	indice_esfervecencia += abs(jugador.velocity.x * 0.25 * delta)
-	indice_esfervecencia += abs(jugador.velocity.y * 0.25 * delta)
+	indice_esfervecencia += abs(jugador.velocity.x * delta)
+	indice_esfervecencia += abs(jugador.velocity.y * delta)
 	print(indice_esfervecencia)
 	if indice_esfervecencia >= efervecencia_maxima:
 		usar_poder()
