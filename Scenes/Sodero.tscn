@@ -33,6 +33,14 @@ shape = SubResource("CapsuleShape2D_uahbk")
 scale = Vector2(0.25, 0.25)
 texture = ExtResource("2_eaj2w")
 
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("2_eaj2w")
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("2_eaj2w")
+
 [node name="MaquinaDeEstados" type="Node" parent="." node_paths=PackedStringArray("estado_inicial")]
 script = ExtResource("1_408qs")
 estado_inicial = NodePath("Quieto")
