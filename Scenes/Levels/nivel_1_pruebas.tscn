@@ -342,7 +342,7 @@ position = Vector2(1131, 871)
 position = Vector2(924, 851)
 
 [node name="Champagne" parent="." instance=ExtResource("5_gyw26")]
-position = Vector2(1319, 823)
+position = Vector2(521, 821)
 
 [node name="Piso" type="TileMap" parent="."]
 z_index = -1

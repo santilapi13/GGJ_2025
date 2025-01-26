@@ -1,8 +1,6 @@
 extends EstadoBebida
 
 @export var fuerza_de_salto = 100.0
-@export var velocidad_maxima: float = 300.0
-@export var gravedad: float = 600.0
 
 @export var estado_cayendo: Estado
 
@@ -22,9 +20,6 @@ func entrar():
 	if jugador.rayI1.is_colliding() or  jugador.rayI2.is_colliding():
 		jugador.velocity.x  += fuerza_de_salto
 	
-
 func update_fisica(delta):
-	jugador.velocity.y += gravedad
-	
-	if jugador.velocity.y >= 0: 
-		maquina_de_estados.cambiar_estado(estado_cayendo)
+	maquina_de_estados.cambiar_estado(estado_cayendo)
+

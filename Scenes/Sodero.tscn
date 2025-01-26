@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://y012ctmcp5j3"]
+[gd_scene load_steps=17 format=3 uid="uid://y012ctmcp5j3"]
 
 [ext_resource type="Script" path="res://Scripts/MaquinaDeEstados.gd" id="1_408qs"]
 [ext_resource type="Script" path="res://Scripts/Jugador.gd" id="1_iixeo"]
@@ -12,6 +12,7 @@
 [ext_resource type="Script" path="res://Scripts/Bebidas/Bebida.gd" id="8_r6fr7"]
 [ext_resource type="Script" path="res://Scripts/Estados/EstadosBebidas/GaseosaEstado.gd" id="9_lybl4"]
 [ext_resource type="Script" path="res://Scripts/Bebidas/Sifon.gd" id="9_pvcpu"]
+[ext_resource type="Script" path="res://Scenes/ChampagneEstado.gd" id="10_2kq7w"]
 [ext_resource type="Script" path="res://Scripts/Bebidas/Gaseosa.gd" id="10_sxd80"]
 [ext_resource type="Script" path="res://Scripts/Bebidas/Champagne.gd" id="11_36tl1"]
 
@@ -23,6 +24,7 @@ height = 4.33484
 script = ExtResource("1_iixeo")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 2)
 rotation = -3.14159
 scale = Vector2(24.125, -44.2923)
 shape = SubResource("CapsuleShape2D_uahbk")
@@ -79,8 +81,11 @@ estado_cayendo = NodePath("../Cayendo")
 [node name="Gaseosa" type="Node" parent="MaquinaDeEstados" node_paths=PackedStringArray("estado_cayendo")]
 script = ExtResource("9_lybl4")
 fuerza_de_salto = 500.0
-velocidad_maxima = 100.0
-gravedad = 40.0
+estado_cayendo = NodePath("../Cayendo")
+
+[node name="Champagne" type="Node" parent="MaquinaDeEstados" node_paths=PackedStringArray("estado_cayendo")]
+script = ExtResource("10_2kq7w")
+fuerza_de_salto = 1200.0
 estado_cayendo = NodePath("../Cayendo")
 
 [node name="ControladorBebidas" parent="." instance=ExtResource("7_c6l2r")]
@@ -96,10 +101,12 @@ estado = NodePath("../../MaquinaDeEstados/Sifon")
 
 [node name="Gaseosa" type="Node" parent="ControladorBebidas" node_paths=PackedStringArray("estado")]
 script = ExtResource("10_sxd80")
+efervecencia_maxima = 2300.0
 estado = NodePath("../../MaquinaDeEstados/Gaseosa")
 
-[node name="Champagne" type="Node" parent="ControladorBebidas"]
+[node name="Champagne" type="Node" parent="ControladorBebidas" node_paths=PackedStringArray("estado")]
 script = ExtResource("11_36tl1")
+estado = NodePath("../../MaquinaDeEstados/Champagne")
 
 [node name="Cerveza" type="Node" parent="ControladorBebidas"]
 script = ExtResource("8_r6fr7")
@@ -111,7 +118,7 @@ position = Vector2(0, -96)
 target_position = Vector2(60, 0)
 
 [node name="RayCastD2" type="RayCast2D" parent="Rays"]
-position = Vector2(1, 89)
+position = Vector2(0, 69)
 target_position = Vector2(60, 0)
 
 [node name="RayCastA1" type="RayCast2D" parent="Rays"]
@@ -127,7 +134,7 @@ position = Vector2(-1, -95)
 target_position = Vector2(-60, 0)
 
 [node name="RayCastI2" type="RayCast2D" parent="Rays"]
-position = Vector2(0, 89)
+position = Vector2(0, 69)
 target_position = Vector2(-60, 0)
 
 [node name="RayCastB1" type="RayCast2D" parent="Rays"]
