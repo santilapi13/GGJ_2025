@@ -203,6 +203,7 @@ scale = Vector2(0.25, 0.25)
 texture = ExtResource("4_mndqu")
 
 [node name="CuerpoCompleto" type="Sprite2D" parent="Visuals"]
+visible = false
 position = Vector2(-1, -27)
 scale = Vector2(0.25, 0.25)
 texture = ExtResource("5_tp6vx")
