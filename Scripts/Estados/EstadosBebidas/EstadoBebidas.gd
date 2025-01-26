@@ -6,3 +6,4 @@ func activarse():
 
 func desactivarse():
 	pass
+
