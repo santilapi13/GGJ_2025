@@ -1,33 +1,78 @@
-[gd_scene load_steps=2 format=3 uid="uid://hqj52v312j8u"]
+[gd_scene load_steps=12 format=3 uid="uid://hqj52v312j8u"]
 
 [ext_resource type="Script" path="res://Scripts/MenuPrincipal.gd" id="1_vyhvx"]
+[ext_resource type="Texture2D" uid="uid://cdp6bnx5w531" path="res://Resources/Sprites/Titulos/titulo1a.png" id="2_h8s4a"]
+[ext_resource type="Texture2D" uid="uid://cy1766kc4s3v8" path="res://Resources/Sprites/Sodero/Sifon/soda 3.png" id="3_cc0ae"]
+[ext_resource type="FontFile" uid="uid://cncyop8odrqcn" path="res://Resources/Fonts/SodaLandFreeVersion.ttf" id="4_7tmib"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qo7fj"]
+bg_color = Color(0.831373, 0.717647, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_no7n8"]
+bg_color = Color(0.97, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mklgy"]
+bg_color = Color(1, 0.360743, 0.311098, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wa7wa"]
+bg_color = Color(0.6, 0.084, 0.084, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nd86l"]
+bg_color = Color(0.97, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0juia"]
+bg_color = Color(1, 0.360743, 0.311098, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6e1ha"]
+bg_color = Color(0.6, 0.084, 0.084, 1)
 
 [node name="MenuPrincipal" type="Node2D"]
 script = ExtResource("1_vyhvx")
 
+[node name="Fondo" type="Panel" parent="."]
+offset_left = -5.0
+offset_top = -7.0
+offset_right = 1157.0
+offset_bottom = 655.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_qo7fj")
+
+[node name="Titulo" type="Sprite2D" parent="."]
+position = Vector2(579, 303)
+rotation = -0.375158
+scale = Vector2(1.1894, 1.43581)
+texture = ExtResource("2_h8s4a")
+
+[node name="Carlo" type="Sprite2D" parent="."]
+position = Vector2(306, 219)
+scale = Vector2(0.295027, 0.304632)
+texture = ExtResource("3_cc0ae")
+
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
-offset_left = 272.0
-offset_top = 307.0
-offset_right = 330.0
-offset_bottom = 338.0
+offset_left = 818.0
+offset_top = 389.0
+offset_right = 948.0
+offset_bottom = 471.0
 scale = Vector2(2, 2.08)
 
 [node name="Jugar" type="Button" parent="VBoxContainer"]
 layout_mode = 2
-text = "JUGAR
+theme_override_fonts/font = ExtResource("4_7tmib")
+theme_override_font_sizes/font_size = 31
+theme_override_styles/normal = SubResource("StyleBoxFlat_no7n8")
+theme_override_styles/hover = SubResource("StyleBoxFlat_mklgy")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_wa7wa")
+text = "JUGAR 
 "
 
-[node name="VBoxContainer2" type="VBoxContainer" parent="."]
-offset_left = 785.0
-offset_top = 314.0
-offset_right = 843.0
-offset_bottom = 345.0
-scale = Vector2(2, 2.08)
-
-[node name="Salir" type="Button" parent="VBoxContainer2"]
+[node name="Salir" type="Button" parent="VBoxContainer"]
 layout_mode = 2
-text = "SALIR
+theme_override_fonts/font = ExtResource("4_7tmib")
+theme_override_font_sizes/font_size = 31
+theme_override_styles/normal = SubResource("StyleBoxFlat_nd86l")
+theme_override_styles/hover = SubResource("StyleBoxFlat_0juia")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_6e1ha")
+text = "SALIR 
 "
 
 [connection signal="pressed" from="VBoxContainer/Jugar" to="." method="_on_jugar_pressed"]
-[connection signal="pressed" from="VBoxContainer2/Salir" to="." method="_on_salir_pressed"]
+[connection signal="pressed" from="VBoxContainer/Salir" to="." method="_on_salir_pressed"]
