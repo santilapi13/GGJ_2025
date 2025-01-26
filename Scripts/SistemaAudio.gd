@@ -5,6 +5,7 @@ var rutas_sfx : Dictionary = {
 	# TODO: Poner pares "nombrePista": "rutaPista"
 }
 var rutas_musica : Dictionary = {
+	"loop_juego": "res://Resources/Music/LOOP GAME.wav"
 	# TODO: Poner pares "nombrePista": "rutaPista"
 }
 var pistas_sfx : Dictionary = {}
@@ -28,7 +29,7 @@ func _ready():
 func reproducir_musica(pista: String):
 	reproductor_musica.stream = pistas_musica[pista]
 	reproductor_musica.play()
-	
+
 func parar_musica():
 	reproductor_musica.stop()
 	

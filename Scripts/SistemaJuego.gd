@@ -18,6 +18,7 @@ func cargar_escena(escena: String):
 func comenzar_juego():
 	nivel_actual = 0
 	cargar_escena(niveles[0])
+	SistemaAudio.reproducir_musica("loop_juego")
 
 func siguiente_nivel():
 	if nivel_actual < niveles.size() - 1:

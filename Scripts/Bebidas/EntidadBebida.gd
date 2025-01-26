@@ -1,4 +1,4 @@
-extends Sprite2D
+extends Node2D
 
 enum Bebidas { SIN_BEBIDA, SIFON, GASEOSA, CHAMPAGNE, CERVEZA }
 

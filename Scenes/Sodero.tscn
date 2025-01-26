@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scripts/MaquinaDeEstados.gd" id="1_408qs"]
 [ext_resource type="Script" path="res://Scripts/Jugador.gd" id="1_iixeo"]
-[ext_resource type="Texture2D" uid="uid://b8gkqmrqh3to5" path="res://icon.svg" id="2_0e72g"]
+[ext_resource type="Texture2D" uid="uid://bxh8trddo4cgh" path="res://Resources/Sprites/Sodero/Sifon/soda 1.png" id="2_eaj2w"]
 [ext_resource type="Script" path="res://Scripts/Estados/Quieto.gd" id="2_j057j"]
 [ext_resource type="Script" path="res://Scripts/Estados/Caminando.gd" id="3_02dre"]
 [ext_resource type="Script" path="res://Scripts/Estados/Cayendo.gd" id="6_wies2"]
@@ -16,21 +16,20 @@
 [ext_resource type="Script" path="res://Scripts/Bebidas/Champagne.gd" id="11_36tl1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2kdpt"]
-size = Vector2(0.99482, 0.541854)
+size = Vector2(0.911921, 0.790204)
 
 [node name="Node2D" type="CharacterBody2D"]
 script = ExtResource("1_iixeo")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1.99998, 1.46191e-05)
+position = Vector2(0, 2.5)
 rotation = -3.14159
 scale = Vector2(24.125, -44.2923)
 shape = SubResource("RectangleShape2D_2kdpt")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(2, 0)
-scale = Vector2(0.2, 0.2)
-texture = ExtResource("2_0e72g")
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("2_eaj2w")
 
 [node name="MaquinaDeEstados" type="Node" parent="." node_paths=PackedStringArray("estado_inicial")]
 script = ExtResource("1_408qs")
