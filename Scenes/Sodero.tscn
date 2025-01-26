@@ -22,6 +22,51 @@
 radius = 1.86528
 height = 4.33484
 
+[sub_resource type="Animation" id="Animation_5p0f7"]
+resource_name = "Correr"
+length = 3.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Cuerpo:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1, 1.5, 2, 2.5, 3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("2_6pnv3"), ExtResource("2_6pnv3"), ExtResource("2_6pnv3"), ExtResource("2_6pnv3"), ExtResource("2_6pnv3"), ExtResource("2_6pnv3"), ExtResource("2_6pnv3")]
+}
+
+[sub_resource type="Animation" id="Animation_rxb00"]
+resource_name = "Idle"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Cara:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(16, -79), Vector2(16, -81), Vector2(16, -79)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Brazos:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(-2, -20), Vector2(-2, -22), Vector2(-2, -20)]
+}
+
 [sub_resource type="Animation" id="Animation_25m5q"]
 length = 0.001
 tracks/0/type = "value"
@@ -59,51 +104,6 @@ tracks/2/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [ExtResource("2_6pnv3")]
-}
-
-[sub_resource type="Animation" id="Animation_rxb00"]
-resource_name = "Idle"
-length = 2.0
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Cara:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1, 2),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Vector2(16, -79), Vector2(16, -81), Vector2(16, -79)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Brazos:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 1, 2),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Vector2(-2, -20), Vector2(-2, -22), Vector2(-2, -20)]
-}
-
-[sub_resource type="Animation" id="Animation_5p0f7"]
-resource_name = "Correr"
-length = 3.5
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Cuerpo:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.5, 1, 1.5, 2, 2.5, 3),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": [ExtResource("2_6pnv3"), ExtResource("2_6pnv3"), ExtResource("2_6pnv3"), ExtResource("2_6pnv3"), ExtResource("2_6pnv3"), ExtResource("2_6pnv3"), ExtResource("2_6pnv3")]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ivo0d"]
@@ -200,7 +200,6 @@ estado = NodePath("../../MaquinaDeEstados/Sifon")
 
 [node name="Gaseosa" type="Node" parent="ControladorBebidas" node_paths=PackedStringArray("estado")]
 script = ExtResource("10_sxd80")
-efervecencia_maxima = 2300.0
 estado = NodePath("../../MaquinaDeEstados/Gaseosa")
 
 [node name="Champagne" type="Node" parent="ControladorBebidas" node_paths=PackedStringArray("estado")]
@@ -214,35 +213,33 @@ script = ExtResource("8_r6fr7")
 
 [node name="RayCastD1" type="RayCast2D" parent="Rays"]
 position = Vector2(0, -96)
-target_position = Vector2(60, 0)
+target_position = Vector2(150, 0)
 
 [node name="RayCastD2" type="RayCast2D" parent="Rays"]
 position = Vector2(0, 69)
-target_position = Vector2(60, 0)
+target_position = Vector2(150, 0)
 
 [node name="RayCastA1" type="RayCast2D" parent="Rays"]
 position = Vector2(22, -86)
-target_position = Vector2(0, -25)
+target_position = Vector2(0, -50)
 
 [node name="RayCastA2" type="RayCast2D" parent="Rays"]
 position = Vector2(-20, -88)
-target_position = Vector2(0, -25)
+target_position = Vector2(0, -50)
 
 [node name="RayCastI1" type="RayCast2D" parent="Rays"]
 position = Vector2(-1, -95)
-target_position = Vector2(-60, 0)
+target_position = Vector2(-150, 0)
 
 [node name="RayCastI2" type="RayCast2D" parent="Rays"]
 position = Vector2(0, 69)
-target_position = Vector2(-60, 0)
+target_position = Vector2(-150, 0)
 
 [node name="RayCastB1" type="RayCast2D" parent="Rays"]
 position = Vector2(-20, 86)
-target_position = Vector2(0, 25)
 
 [node name="RayCastB2" type="RayCast2D" parent="Rays"]
 position = Vector2(22, 87)
-target_position = Vector2(0, 25)
 
 [node name="CaraYCuerpo" type="AnimationPlayer" parent="."]
 libraries = {

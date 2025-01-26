@@ -1,7 +1,7 @@
 extends Bebida
 
 var indice_esfervecencia: float
-@export var efervecencia_maxima: float = 3000
+@export var efervecencia_maxima: float = 1000
 
 func prepararse():
 	indice_esfervecencia = 0

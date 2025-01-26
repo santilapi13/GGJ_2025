@@ -1,7 +1,9 @@
 extends Control
 
 var niveles : Array[String] = [
-	"res://Scenes/Levels/nivel_1.tscn"
+	"res://Scenes/Levels/nivel_1.tscn","res://Scenes/Levels/nivel_2.tscn","res://Scenes/Levels/nivel_3.tscn"
+	,"res://Scenes/Levels/nivel_4.tscn","res://Scenes/Levels/nivel_5.tscn","res://Scenes/Levels/nivel_6.tscn","res://Scenes/Levels/nivel_7.tscn"
+	,"res://Scenes/Levels/nivel_8.tscn"
 ]
 var nivel_actual : int = -1
 @onready var anim : AnimationPlayer = $Transicion

@@ -20,6 +20,10 @@ config/icon="res://icon.svg"
 SistemaAudio="*res://Scenes/Autoloads/sistema_audio.tscn"
 SistemaJuego="*res://Scenes/Autoloads/sistema_juego.tscn"
 
+[display]
+
+window/stretch/mode="canvas_items"
+
 [dotnet]
 
 project/assembly_name="GGJ_2025_GODOT"
