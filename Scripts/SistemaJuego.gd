@@ -3,7 +3,7 @@ extends Control
 var niveles : Array[String] = [
 	"res://Scenes/Levels/nivel_1.tscn"
 ]
-var nivel_actual : int
+var nivel_actual : int = -1
 @onready var anim : AnimationPlayer = $Transicion
 
 func cargar_escena(escena: String):
@@ -31,3 +31,12 @@ func siguiente_nivel():
 
 func reiniciar_nivel():
 	cargar_escena(niveles[nivel_actual])
+
+func _input(event):
+	if event is InputEventKey and event.pressed:
+		if event.keycode == KEY_ESCAPE:
+			get_tree().quit()
+		elif event.keycode == KEY_R:
+			reiniciar_nivel()
+		
+	
