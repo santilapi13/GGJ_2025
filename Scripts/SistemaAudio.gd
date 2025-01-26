@@ -2,7 +2,12 @@ extends Node
 
 @export var maximo_reproductores : int = 10
 var rutas_sfx : Dictionary = {
-	# TODO: Poner pares "nombrePista": "rutaPista"
+	"Recoger": "res://Resources/SFX/Recoger.mp3",
+	"Victoria": "res://Resources/SFX/Victoria.mp3",
+	"Soda": "res://Resources/SFX/SoderoSifon.wav",
+	"sifon_palmerasA": "res://Resources/SFX/CHORRO 1 SODA.wav",
+	"sifon_palmerasB": "res://Resources/SFX/CHORRO 2 SODA.wav",
+	"Fallo": "res://Resources/SFX/Fallo.mp3"
 }
 var rutas_musica : Dictionary = {
 	"loop_juego": "res://Resources/Music/LOOP GAME.wav"

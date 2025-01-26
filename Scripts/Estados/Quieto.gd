@@ -3,6 +3,10 @@ extends Estado
 @export var estado_caminando: Estado
 @export var estado_cayendo: Estado
 
+func _ready():
+	super()
+	codigo_animacion = "Idle"
+
 func update_fisica(delta):
 	var eje_x =  sign(Input.get_axis("left","rigth"))
 	if eje_x != 0:

@@ -3,6 +3,9 @@ extends Bebida
 var indice_esfervecencia: float
 @export var efervecencia_maxima: float = 1000
 
+func _ready():
+	textura_brazos = preload("res://Resources/Sprites/Sodero/Correr/gaseosa 1.png")
+
 func prepararse():
 	indice_esfervecencia = 0
 	super()

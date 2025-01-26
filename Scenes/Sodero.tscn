@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://y012ctmcp5j3"]
+[gd_scene load_steps=29 format=3 uid="uid://y012ctmcp5j3"]
 
 [ext_resource type="Script" path="res://Scripts/MaquinaDeEstados.gd" id="1_408qs"]
 [ext_resource type="Script" path="res://Scripts/Jugador.gd" id="1_iixeo"]
@@ -14,9 +14,15 @@
 [ext_resource type="Script" path="res://Scripts/Bebidas/Bebida.gd" id="8_r6fr7"]
 [ext_resource type="Script" path="res://Scripts/Estados/EstadosBebidas/GaseosaEstado.gd" id="9_lybl4"]
 [ext_resource type="Script" path="res://Scripts/Bebidas/Sifon.gd" id="9_pvcpu"]
-[ext_resource type="Script" path="res://Scenes/ChampagneEstado.gd" id="10_2kq7w"]
 [ext_resource type="Script" path="res://Scripts/Bebidas/Gaseosa.gd" id="10_sxd80"]
 [ext_resource type="Script" path="res://Scripts/Bebidas/Champagne.gd" id="11_36tl1"]
+[ext_resource type="Script" path="res://Scripts/Estados/EstadosBebidas/ChampagneEstado.gd" id="12_pw6hv"]
+[ext_resource type="Texture2D" uid="uid://c02okxib1ar5v" path="res://Resources/Sprites/Sodero/Correr/corre 1.png" id="18_ewytc"]
+[ext_resource type="Texture2D" uid="uid://q1ni68llgl2p" path="res://Resources/Sprites/Sodero/Correr/corre 2.png" id="19_5ggmu"]
+[ext_resource type="Texture2D" uid="uid://iaxidd1kaqhc" path="res://Resources/Sprites/Sodero/Correr/corre 3.png" id="20_xui5i"]
+[ext_resource type="Texture2D" uid="uid://bx7tdsnqnmsg4" path="res://Resources/Sprites/Sodero/Correr/corre 4.png" id="21_3j3ec"]
+[ext_resource type="Texture2D" uid="uid://cfj4pj4idjxfw" path="res://Resources/Sprites/Sodero/Correr/corre 5.png" id="22_tydcn"]
+[ext_resource type="Texture2D" uid="uid://bvb5clibs71rv" path="res://Resources/Sprites/Sodero/Correr/corre 6.png" id="23_pkt5r"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_uahbk"]
 radius = 1.86528
@@ -24,18 +30,43 @@ height = 4.33484
 
 [sub_resource type="Animation" id="Animation_5p0f7"]
 resource_name = "Correr"
-length = 3.5
+length = 1.2
+loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Cuerpo:texture")
+tracks/0/path = NodePath("Visuals/Cuerpo:texture")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.5, 1, 1.5, 2, 2.5, 3),
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [ExtResource("2_6pnv3"), ExtResource("2_6pnv3"), ExtResource("2_6pnv3"), ExtResource("2_6pnv3"), ExtResource("2_6pnv3"), ExtResource("2_6pnv3"), ExtResource("2_6pnv3")]
+"values": [ExtResource("18_ewytc"), ExtResource("19_5ggmu"), ExtResource("20_xui5i"), ExtResource("21_3j3ec"), ExtResource("22_tydcn"), ExtResource("23_pkt5r"), ExtResource("18_ewytc")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Visuals/Cara:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [Vector2(-32, -78), Vector2(-21, -79), Vector2(-22, -79), Vector2(-34, -81), Vector2(-27, -79), Vector2(-27, -79), Vector2(-34, -78)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Visuals/Brazos:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [Vector2(-14, -15), Vector2(-4, -16), Vector2(-8, -16), Vector2(-19, -17), Vector2(-12, -15), Vector2(-11, -16), Vector2(-17, -15)]
 }
 
 [sub_resource type="Animation" id="Animation_rxb00"]
@@ -45,19 +76,19 @@ loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Cara:position")
+tracks/0/path = NodePath("Visuals/Cara:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0, 1, 2),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [Vector2(16, -79), Vector2(16, -81), Vector2(16, -79)]
+"values": [Vector2(-11, -79), Vector2(-11, -81), Vector2(-11, -79)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Brazos:position")
+tracks/1/path = NodePath("Visuals/Brazos:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -66,13 +97,25 @@ tracks/1/keys = {
 "update": 0,
 "values": [Vector2(-2, -20), Vector2(-2, -22), Vector2(-2, -20)]
 }
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Visuals/Cuerpo:texture")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_6pnv3")]
+}
 
 [sub_resource type="Animation" id="Animation_25m5q"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Cara:position")
+tracks/0/path = NodePath("Visuals/Cara:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -84,7 +127,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Brazos:position")
+tracks/1/path = NodePath("Visuals/Brazos:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -96,7 +139,7 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("Cuerpo:texture")
+tracks/2/path = NodePath("Visuals/Cuerpo:texture")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -118,23 +161,24 @@ safe_margin = 0.1
 script = ExtResource("1_iixeo")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 2)
+position = Vector2(2, -40)
 rotation = -3.14159
 scale = Vector2(24.125, -44.2923)
 shape = SubResource("CapsuleShape2D_uahbk")
 
-[node name="Cuerpo" type="Sprite2D" parent="."]
+[node name="Visuals" type="Node2D" parent="."]
+
+[node name="Cuerpo" type="Sprite2D" parent="Visuals"]
 scale = Vector2(0.25, 0.25)
 texture = ExtResource("2_6pnv3")
 
-[node name="Cara" type="Sprite2D" parent="."]
+[node name="Cara" type="Sprite2D" parent="Visuals"]
 z_index = 2
 position = Vector2(16, -79)
 scale = Vector2(0.25, 0.25)
 texture = ExtResource("3_hl3mt")
-flip_h = true
 
-[node name="Brazos" type="Sprite2D" parent="."]
+[node name="Brazos" type="Sprite2D" parent="Visuals"]
 z_index = 1
 position = Vector2(-2, -20)
 scale = Vector2(0.25, 0.25)
@@ -183,7 +227,7 @@ fuerza_de_salto = 500.0
 estado_cayendo = NodePath("../Cayendo")
 
 [node name="Champagne" type="Node" parent="MaquinaDeEstados" node_paths=PackedStringArray("estado_cayendo")]
-script = ExtResource("10_2kq7w")
+script = ExtResource("12_pw6hv")
 fuerza_de_salto = 1200.0
 estado_cayendo = NodePath("../Cayendo")
 
@@ -241,7 +285,7 @@ position = Vector2(-20, 86)
 [node name="RayCastB2" type="RayCast2D" parent="Rays"]
 position = Vector2(22, 87)
 
-[node name="CaraYCuerpo" type="AnimationPlayer" parent="."]
+[node name="Anim" type="AnimationPlayer" parent="."]
 libraries = {
 "": SubResource("AnimationLibrary_ivo0d")
 }

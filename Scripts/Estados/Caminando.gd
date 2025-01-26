@@ -7,6 +7,10 @@ extends Estado
 @export var aceleracion: float = 600.0
 @export var friccion: float = 900.0
 
+func _ready():
+	super()
+	codigo_animacion = "Correr"
+
 func update_fisica(delta):
 	var eje_x =  sign(Input.get_axis("left","rigth"))
 	

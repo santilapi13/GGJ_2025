@@ -23,6 +23,7 @@ func comenzar_juego():
 	SistemaAudio.reproducir_musica("loop_juego")
 
 func siguiente_nivel():
+	SistemaAudio.reproducir_sonido("Victoria")
 	if nivel_actual < niveles.size() - 1:
 		nivel_actual += 1
 		cargar_escena(niveles[nivel_actual])
@@ -32,6 +33,7 @@ func siguiente_nivel():
 		print("GANASTE")
 
 func reiniciar_nivel():
+	SistemaAudio.reproducir_sonido("Fallo")
 	cargar_escena(niveles[nivel_actual])
 
 func _input(event):

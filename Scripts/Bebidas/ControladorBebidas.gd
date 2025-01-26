@@ -20,10 +20,12 @@ func usar_poder():
 
 func levantar_bebida(bebida: Bebidas):
 	if bebida_actual == bebidas_posibles[Bebidas.SIN_BEBIDA]:
+		SistemaAudio.reproducir_sonido("Soda")
 		bebida_actual = bebidas_posibles[bebida]
 		bebida_actual.prepararse()
 	else:
 		cola_bebidas.push_back(bebidas_posibles[bebida])
+	SistemaAudio.reproducir_sonido("Recoger")
 
 func descartar_bebida():
 	bebida_actual = bebidas_posibles[Bebidas.SIN_BEBIDA] if cola_bebidas.is_empty() else cola_bebidas.pop_front()

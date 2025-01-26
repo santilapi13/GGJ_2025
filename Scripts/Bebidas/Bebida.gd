@@ -7,8 +7,13 @@ class_name Bebida
 @onready var controlador_bebidas = get_parent()
 @onready var jugador: CharacterBody2D = controlador_bebidas.get_parent() 
 
+var textura_brazos : Texture
+
+func _ready():
+	textura_brazos = preload("res://Resources/Sprites/Sodero/Idle/idle brazo.png")
+
 func prepararse():
-	pass
+	jugador.cambiar_brazos(textura_brazos)
 	
 func usar_poder():
 	estado.activarse()

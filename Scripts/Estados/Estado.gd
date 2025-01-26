@@ -1,7 +1,7 @@
 extends Node
 class_name Estado
 
-@export var codigo_animacion: String = " "
+var codigo_animacion: String = ""
 var maquina_de_estados
 var jugador: CharacterBody2D
 
@@ -18,7 +18,8 @@ func update_fisica(delta):
 	pass
 
 func entrar():
-	pass
+	if codigo_animacion != "":
+		jugador.anim.play(codigo_animacion)
 
 func salir():
 	pass
