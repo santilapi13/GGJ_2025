@@ -1,21 +1,47 @@
-[gd_scene load_steps=4 format=3 uid="uid://crdu7vgfqg37e"]
+[gd_scene load_steps=8 format=3 uid="uid://crdu7vgfqg37e"]
 
-[ext_resource type="Texture2D" uid="uid://djk1542wdjpoq" path="res://Resources/Sprites/gaseosa.png" id="1_14yki"]
+[ext_resource type="Texture2D" uid="uid://6ph2lmuil4lm" path="res://Resources/Sprites/ObjetosAnimados/Gaseosa/lata 1.png" id="1_jmvvj"]
 [ext_resource type="Script" path="res://Scripts/Bebidas/EntidadBebida.gd" id="2_bjyjq"]
+[ext_resource type="Texture2D" uid="uid://dkyijv8d47nkp" path="res://Resources/Sprites/ObjetosAnimados/Gaseosa/lata 2.png" id="2_r7a7a"]
+[ext_resource type="Texture2D" uid="uid://ckkvebulltdbe" path="res://Resources/Sprites/ObjetosAnimados/Gaseosa/lata 3.png" id="3_jdpx2"]
+[ext_resource type="Texture2D" uid="uid://o3ccsm3sbrrn" path="res://Resources/Sprites/ObjetosAnimados/Gaseosa/lata 4.png" id="4_spaj8"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ncc4t"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_jmvvj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_r7a7a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_jdpx2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_spaj8")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0j875"]
-radius = 85.7143
-height = 240.0
+radius = 412.5
+height = 1300.0
 
-[node name="Gaseosa" type="Sprite2D"]
-scale = Vector2(0.2, 0.2)
-texture = ExtResource("1_14yki")
+[node name="Gaseosa" type="AnimatedSprite2D"]
+scale = Vector2(0.07, 0.07)
+sprite_frames = SubResource("SpriteFrames_ncc4t")
+animation = &"Idle"
+autoplay = "Idle"
 script = ExtResource("2_bjyjq")
 tipo_bebida = 2
 
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, -162.5)
 shape = SubResource("CapsuleShape2D_0j875")
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

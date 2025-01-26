@@ -4,6 +4,7 @@ extends EstadoBebida
 
 @export var estado_cayendo: Estado
 
+
 func activarse():
 	super()
 

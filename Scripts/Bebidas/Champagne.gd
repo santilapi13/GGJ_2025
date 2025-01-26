@@ -2,6 +2,10 @@ extends Bebida
 
 const PREFAB_CORCHO: String = ""
 
+func _ready():
+	#textura_brazos = preload("")
+	pass
+
 func descorchar():
 	var prefab : Corcho = load(PREFAB_CORCHO).instantiate()
 	add_child(prefab)
