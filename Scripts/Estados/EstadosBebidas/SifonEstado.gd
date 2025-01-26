@@ -17,11 +17,13 @@ func entrar():
 	cuerpo.visible = false
 	brazo.visible = false
 	cuerpo_completo.visible = true
+	cuerpo_completo.play("soda")
 
 func salir():
 	cara.visible = true
 	cuerpo.visible = true
 	brazo.visible = true
+	cuerpo_completo.stop()
 	cuerpo_completo.visible = false
 
 func activarse():

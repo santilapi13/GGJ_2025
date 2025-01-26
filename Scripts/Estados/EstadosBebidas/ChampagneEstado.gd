@@ -16,7 +16,7 @@ func entrar():
 	cuerpo.visible = false
 	brazo.visible = false
 	cuerpo_completo.visible = true
-	##cuerpo_completo.animation
+	cuerpo_completo.play("champagne")
 	var eje_x =  sign(Input.get_axis("left","rigth"))
 	var eje_y =  sign(Input.get_axis("up","down"))
 	print(Vector2(eje_x,eje_y).normalized())
@@ -27,6 +27,7 @@ func salir():
 	cara.visible = true
 	cuerpo.visible = true
 	brazo.visible = true
+	cuerpo_completo.stop()
 	cuerpo_completo.visible = false
 
 	
