@@ -44,13 +44,15 @@ estado_cayendo = NodePath("../Cayendo")
 script = ExtResource("3_02dre")
 estado_quieto = NodePath("../Quieto")
 estado_cayendo = NodePath("../Cayendo")
-velocidad_maxima = 100.0
+velocidad_maxima = 250.0
+aceleracion = 800.0
+friccion = 1050.0
 
 [node name="Cayendo" type="Node" parent="MaquinaDeEstados" node_paths=PackedStringArray("estado_quieto", "estado_caminando")]
 script = ExtResource("6_wies2")
 estado_quieto = NodePath("../Quieto")
 estado_caminando = NodePath("../Caminando")
-velocidad_maxima = 100.0
+velocidad_maxima = 250.0
 gravedad = 20.0
 
 [node name="SinBebida" type="Node" parent="MaquinaDeEstados" node_paths=PackedStringArray("estado_cayendo")]
@@ -62,7 +64,8 @@ velocidad_maxima = 100.0
 
 [node name="Sifon" type="Node" parent="MaquinaDeEstados" node_paths=PackedStringArray("estado_cayendo")]
 script = ExtResource("8_i5ypm")
-velocidad_maxima = 100.0
+fuerza_de_salto = -250
+velocidad_maxima = 250.0
 estado_cayendo = NodePath("../Cayendo")
 
 [node name="Gaseosa" type="Node" parent="MaquinaDeEstados" node_paths=PackedStringArray("estado_cayendo")]
@@ -96,33 +99,33 @@ script = ExtResource("8_r6fr7")
 [node name="Rays" type="Node2D" parent="."]
 
 [node name="RayCastD1" type="RayCast2D" parent="Rays"]
-position = Vector2(15, -11)
-target_position = Vector2(16, 0)
+position = Vector2(0, -96)
+target_position = Vector2(60, 0)
 
 [node name="RayCastD2" type="RayCast2D" parent="Rays"]
-position = Vector2(15, 10)
-target_position = Vector2(16, 0)
+position = Vector2(1, 89)
+target_position = Vector2(60, 0)
 
 [node name="RayCastA1" type="RayCast2D" parent="Rays"]
-position = Vector2(12, -13)
-target_position = Vector2(0, -16)
+position = Vector2(22, -86)
+target_position = Vector2(0, -25)
 
 [node name="RayCastA2" type="RayCast2D" parent="Rays"]
-position = Vector2(-9, -12)
-target_position = Vector2(0, -16)
+position = Vector2(-20, -88)
+target_position = Vector2(0, -25)
 
 [node name="RayCastI1" type="RayCast2D" parent="Rays"]
-position = Vector2(-11, -10)
-target_position = Vector2(-16, 0)
+position = Vector2(-1, -95)
+target_position = Vector2(-60, 0)
 
 [node name="RayCastI2" type="RayCast2D" parent="Rays"]
-position = Vector2(-11, 10)
-target_position = Vector2(-16, 0)
+position = Vector2(0, 89)
+target_position = Vector2(-60, 0)
 
 [node name="RayCastB1" type="RayCast2D" parent="Rays"]
-position = Vector2(-9, 12)
-target_position = Vector2(0, 16)
+position = Vector2(-20, 86)
+target_position = Vector2(0, 25)
 
 [node name="RayCastB2" type="RayCast2D" parent="Rays"]
-position = Vector2(13, 12)
-target_position = Vector2(0, 16)
+position = Vector2(22, 87)
+target_position = Vector2(0, 25)
