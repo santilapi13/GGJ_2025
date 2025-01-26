@@ -16,7 +16,7 @@
 [ext_resource type="Script" path="res://Scripts/Bebidas/Champagne.gd" id="11_36tl1"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_uahbk"]
-radius = 1.86528
+radius = 1.45078
 height = 4.33484
 
 [node name="Node2D" type="CharacterBody2D"]
