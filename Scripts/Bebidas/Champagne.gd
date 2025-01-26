@@ -3,7 +3,7 @@ extends Bebida
 const PREFAB_CORCHO: String = ""
 
 func _ready():
-	#textura_brazos = preload("")
+	textura_brazos = preload("res://Resources/Sprites/Sodero/Correr/champ brazo.png")
 	pass
 
 func descorchar():

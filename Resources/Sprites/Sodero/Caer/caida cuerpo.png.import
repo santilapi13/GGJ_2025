@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bu30xouung0yh"
-path="res://.godot/imported/champagne brazos.png-096d2a9d0a86c951046f12c2f11102d8.ctex"
+uid="uid://c8vr6j4gpblgs"
+path="res://.godot/imported/caida cuerpo.png-b0405a60691a4d280cebb40e15e4d6bd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Sprites/Sodero/Correr/champagne brazos.png"
-dest_files=["res://.godot/imported/champagne brazos.png-096d2a9d0a86c951046f12c2f11102d8.ctex"]
+source_file="res://Resources/Sprites/Sodero/Caer/caida cuerpo.png"
+dest_files=["res://.godot/imported/caida cuerpo.png-b0405a60691a4d280cebb40e15e4d6bd.ctex"]
 
 [params]
 

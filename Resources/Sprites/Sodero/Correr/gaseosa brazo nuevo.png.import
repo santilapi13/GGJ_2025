@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c841cmby2ccrk"
-path="res://.godot/imported/caida.png-51bd5417f05d43784d7955138c5ee87b.ctex"
+uid="uid://bmf6vccq0r3pn"
+path="res://.godot/imported/gaseosa brazo nuevo.png-830a3560703cfedb5cdf58d6f7ca99e3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Sprites/Sodero/caida.png"
-dest_files=["res://.godot/imported/caida.png-51bd5417f05d43784d7955138c5ee87b.ctex"]
+source_file="res://Resources/Sprites/Sodero/Correr/gaseosa brazo nuevo.png"
+dest_files=["res://.godot/imported/gaseosa brazo nuevo.png-830a3560703cfedb5cdf58d6f7ca99e3.ctex"]
 
 [params]
 

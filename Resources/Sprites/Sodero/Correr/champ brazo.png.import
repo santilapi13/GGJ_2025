@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cww2mfoy2nfh3"
-path="res://.godot/imported/gaseosa 1.png-e67a4cbfac71bca7b6ac6413eeb258f7.ctex"
+uid="uid://tuvdduuo1y4h"
+path="res://.godot/imported/champ brazo.png-643029d97bffb3885f4f33671abd7ebe.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Sprites/Sodero/Correr/gaseosa 1.png"
-dest_files=["res://.godot/imported/gaseosa 1.png-e67a4cbfac71bca7b6ac6413eeb258f7.ctex"]
+source_file="res://Resources/Sprites/Sodero/Correr/champ brazo.png"
+dest_files=["res://.godot/imported/champ brazo.png-643029d97bffb3885f4f33671abd7ebe.ctex"]
 
 [params]
 

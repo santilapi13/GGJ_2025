@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=3 uid="uid://y012ctmcp5j3"]
+[gd_scene load_steps=34 format=3 uid="uid://y012ctmcp5j3"]
 
 [ext_resource type="Script" path="res://Scripts/MaquinaDeEstados.gd" id="1_408qs"]
 [ext_resource type="Script" path="res://Scripts/Jugador.gd" id="1_iixeo"]
@@ -6,6 +6,7 @@
 [ext_resource type="Script" path="res://Scripts/Estados/Quieto.gd" id="2_j057j"]
 [ext_resource type="Script" path="res://Scripts/Estados/Caminando.gd" id="3_02dre"]
 [ext_resource type="Texture2D" uid="uid://bbopqql71tddv" path="res://Resources/Sprites/Sodero/Idle/cara.png" id="3_hl3mt"]
+[ext_resource type="Texture2D" uid="uid://2o3smpeixhng" path="res://Resources/Sprites/Sodero/Caer/caida cabeza.png" id="3_w1vx0"]
 [ext_resource type="Texture2D" uid="uid://c05b6q72f0q0w" path="res://Resources/Sprites/Sodero/Idle/idle brazo.png" id="4_mndqu"]
 [ext_resource type="Texture2D" uid="uid://tp8lcner2w43" path="res://Resources/Sprites/Sodero/Sifon/soda 2.png" id="5_tp6vx"]
 [ext_resource type="Script" path="res://Scripts/Estados/Cayendo.gd" id="6_wies2"]
@@ -24,6 +25,7 @@
 [ext_resource type="Texture2D" uid="uid://bx7tdsnqnmsg4" path="res://Resources/Sprites/Sodero/Correr/corre 4.png" id="21_3j3ec"]
 [ext_resource type="Texture2D" uid="uid://cfj4pj4idjxfw" path="res://Resources/Sprites/Sodero/Correr/corre 5.png" id="22_tydcn"]
 [ext_resource type="Texture2D" uid="uid://bvb5clibs71rv" path="res://Resources/Sprites/Sodero/Correr/corre 6.png" id="23_pkt5r"]
+[ext_resource type="Texture2D" uid="uid://c8vr6j4gpblgs" path="res://Resources/Sprites/Sodero/Caer/caida cuerpo.png" id="25_vlsir"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_uahbk"]
 radius = 1.86528
@@ -69,6 +71,18 @@ tracks/2/keys = {
 "update": 1,
 "values": [Vector2(-14, -15), Vector2(-4, -16), Vector2(-8, -16), Vector2(-19, -17), Vector2(-12, -15), Vector2(-11, -16), Vector2(-17, -15)]
 }
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Visuals/Cara:texture")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("3_hl3mt")]
+}
 
 [sub_resource type="Animation" id="Animation_rxb00"]
 resource_name = "Idle"
@@ -110,6 +124,18 @@ tracks/2/keys = {
 "update": 1,
 "values": [ExtResource("2_6pnv3")]
 }
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Visuals/Cara:texture")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("3_hl3mt")]
+}
 
 [sub_resource type="Animation" id="Animation_25m5q"]
 length = 0.001
@@ -149,6 +175,18 @@ tracks/2/keys = {
 "update": 1,
 "values": [ExtResource("2_6pnv3")]
 }
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Visuals/Cara:texture")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("3_w1vx0")]
+}
 
 [sub_resource type="Animation" id="Animation_6fyx7"]
 resource_name = "chorro"
@@ -166,8 +204,37 @@ tracks/0/keys = {
 "values": [ExtResource("18_ewytc")]
 }
 
+[sub_resource type="Animation" id="Animation_jn2v3"]
+resource_name = "Caer"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Visuals/Cara:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("3_w1vx0")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Visuals/Cuerpo:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("25_vlsir")]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ivo0d"]
 _data = {
+"Caer": SubResource("Animation_jn2v3"),
 "Correr": SubResource("Animation_5p0f7"),
 "Idle": SubResource("Animation_rxb00"),
 "RESET": SubResource("Animation_25m5q"),
@@ -194,7 +261,7 @@ texture = ExtResource("2_6pnv3")
 z_index = 2
 position = Vector2(16, -79)
 scale = Vector2(0.25, 0.25)
-texture = ExtResource("3_hl3mt")
+texture = ExtResource("3_w1vx0")
 
 [node name="Brazos" type="Sprite2D" parent="Visuals"]
 z_index = 1

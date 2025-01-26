@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://oaroo07lidqm"
-path="res://.godot/imported/champagne manos.png-59ceeb4898b39d92b27d0c2034e5d6c4.ctex"
+uid="uid://dpuhihxe60plx"
+path="res://.godot/imported/caida brazos.png-5f0dbf375028d86604eb55da190d99ee.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Sprites/Sodero/Correr/champagne manos.png"
-dest_files=["res://.godot/imported/champagne manos.png-59ceeb4898b39d92b27d0c2034e5d6c4.ctex"]
+source_file="res://Resources/Sprites/Sodero/caida brazos.png"
+dest_files=["res://.godot/imported/caida brazos.png-5f0dbf375028d86604eb55da190d99ee.ctex"]
 
 [params]
 

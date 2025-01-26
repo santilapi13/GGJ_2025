@@ -9,6 +9,9 @@ extends Estado
 
 @export var gravedad: float = 600
 
+func _ready():
+	super()
+	codigo_animacion = "Caer"
 
 func update_fisica(delta):
 	var eje_x =  sign(Input.get_axis("left","rigth"))

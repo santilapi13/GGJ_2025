@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bo33cxnxvcp2g"
-path="res://.godot/imported/gaseosa 2.png-1ada7aed83c552c9baa78df1a32a490a.ctex"
+uid="uid://2o3smpeixhng"
+path="res://.godot/imported/caida cabeza.png-bc61ed8d49f3873361b114333d665e1f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Sprites/Sodero/Correr/gaseosa 2.png"
-dest_files=["res://.godot/imported/gaseosa 2.png-1ada7aed83c552c9baa78df1a32a490a.ctex"]
+source_file="res://Resources/Sprites/Sodero/Caer/caida cabeza.png"
+dest_files=["res://.godot/imported/caida cabeza.png-bc61ed8d49f3873361b114333d665e1f.ctex"]
 
 [params]
 
