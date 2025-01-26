@@ -8,7 +8,7 @@ radius = 70.0
 height = 260.0
 
 [node name="Sifon" type="Sprite2D"]
-scale = Vector2(0.3, 0.3)
+scale = Vector2(0.4, 0.4)
 texture = ExtResource("1_hotjw")
 script = ExtResource("2_1yr0q")
 tipo_bebida = 1

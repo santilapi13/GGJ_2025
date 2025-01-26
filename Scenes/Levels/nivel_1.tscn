@@ -1,10 +1,8 @@
-[gd_scene load_steps=49 format=3 uid="uid://ci4dfgg7ydhkn"]
+[gd_scene load_steps=56 format=3 uid="uid://ci4dfgg7ydhkn"]
 
 [ext_resource type="PackedScene" uid="uid://y012ctmcp5j3" path="res://Scenes/Sodero.tscn" id="1_am1it"]
 [ext_resource type="Script" path="res://Scripts/nivel.gd" id="1_e22bm"]
 [ext_resource type="PackedScene" uid="uid://ddi8sx3rv5ach" path="res://Scenes/Bebidas/sifon.tscn" id="4_c6q8b"]
-[ext_resource type="PackedScene" uid="uid://crdu7vgfqg37e" path="res://Scenes/Bebidas/gaseosa.tscn" id="5_5e773"]
-[ext_resource type="PackedScene" uid="uid://rytanwagpmoy" path="res://Scenes/Bebidas/champagne.tscn" id="6_kkhy3"]
 [ext_resource type="Texture2D" uid="uid://bmxfqx6gryfo5" path="res://Resources/Sprites/Tiles/1.png" id="7_tumct"]
 [ext_resource type="Texture2D" uid="uid://cj56ykh63yvl4" path="res://Resources/Sprites/Tiles/2.png" id="8_kmwut"]
 [ext_resource type="Texture2D" uid="uid://ddujjhpbpdd2q" path="res://Resources/Sprites/Tiles/3.png" id="9_4so1p"]
@@ -25,12 +23,24 @@
 [ext_resource type="Texture2D" uid="uid://dbc1d05k2gl72" path="res://Resources/Sprites/Tiles/18.png" id="24_2v2ra"]
 [ext_resource type="Texture2D" uid="uid://cl05n315a6iv1" path="res://Resources/Sprites/Tiles/19.png" id="25_qncm4"]
 [ext_resource type="Texture2D" uid="uid://b63ktwbj06kl5" path="res://Resources/Sprites/Tiles/sky.png" id="25_vandk"]
+[ext_resource type="Texture2D" uid="uid://l2nfovqm37cn" path="res://Resources/Fondo/cielo.png" id="26_mivrp"]
+[ext_resource type="Texture2D" uid="uid://c66wovh2uhg8t" path="res://Resources/Fondo/nube2.png" id="27_s0p6h"]
+[ext_resource type="Texture2D" uid="uid://hqdengy5uwpb" path="res://Resources/Fondo/nube3.png" id="28_bl3y2"]
+[ext_resource type="Texture2D" uid="uid://dqqhuh8ycbs5o" path="res://Resources/Fondo/nube4.png" id="29_62u20"]
+[ext_resource type="Texture2D" uid="uid://bm5m1ju3tbdrm" path="res://Resources/Fondo/nube5.png" id="30_xy7ww"]
+[ext_resource type="Texture2D" uid="uid://17ot5cu81oyb" path="res://Resources/Fondo/nube6.png" id="31_v84lr"]
+[ext_resource type="Texture2D" uid="uid://ddo2es2xvflix" path="res://Resources/Fondo/nube1.png" id="32_cbu2j"]
+[ext_resource type="Texture2D" uid="uid://5vm31ell4d5t" path="res://Resources/Fondo/mar.png" id="33_rfgfm"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rdoln"]
 radius = 34.1631
-height = 141.096
+height = 935.578
 
-[sub_resource type="CanvasTexture" id="CanvasTexture_ja815"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6a1mt"]
+size = Vector2(932, 75)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ej8n2"]
+size = Vector2(141, 1868)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_u56c7"]
 texture = ExtResource("7_tumct")
@@ -54,7 +64,7 @@ texture_region_size = Vector2i(128, 128)
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
-0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-64, -64, 56, -64, 64, -48, 49, -28, -64, -31)
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-64, -64, 47, -64, 64, -64, 64, -19.799, -64, -31)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_r0y6s"]
 texture = ExtResource("10_aj5xl")
@@ -76,6 +86,7 @@ texture_region_size = Vector2i(128, 128)
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-64, -64, 64, -64, 64, 64, -64, 64)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8gudh"]
 texture = ExtResource("13_ww15l")
@@ -127,7 +138,7 @@ texture_region_size = Vector2i(128, 93)
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
-0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-64, -45, 64, -44, 64, 45, 19, 43, -4, 25, -19, 6, -49, 5, -64, -14)
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-64, -47, 64, -48, 64, 45, 19, 43, -4, 25, -19, 6, -64, 5.3033)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_v4nvo"]
 texture = ExtResource("20_tf2i5")
@@ -135,7 +146,7 @@ texture_region_size = Vector2i(128, 93)
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
-0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-64, -48, 64, -45, 64, 45, 33, 41, 5, 47, -23, 35, -64, 46)
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-64, -48, 64, -48, 64, 45, 33, 41, 5, 47, -23, 35, -64, 46)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_q68d2"]
 texture = ExtResource("21_pmmgj")
@@ -143,7 +154,7 @@ texture_region_size = Vector2i(128, 93)
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
-0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-64, -46, 64, -45, 64, -20, 52, -8, 37, 6, 16, 10, -4, 32, -34, 46, -64, 45)
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-64, -48, 64, -48, 64, -20, 52, -8, 37, 6, 16, 10, -4, 32, -34, 46, -64, 45)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_584bs"]
 texture = ExtResource("22_kr2tg")
@@ -319,14 +330,9 @@ position = Vector2(171, 772)
 position = Vector2(43, 52)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PuntoDestino"]
-position = Vector2(1792.12, 542)
+position = Vector2(2299, 195)
 scale = Vector2(1.72701, 0.921356)
 shape = SubResource("CapsuleShape2D_rdoln")
-
-[node name="Sprite2D" type="Sprite2D" parent="PuntoDestino"]
-position = Vector2(1791.62, 542)
-scale = Vector2(117.233, 100)
-texture = SubResource("CanvasTexture_ja815")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 anchor_mode = 0
@@ -335,27 +341,97 @@ zoom = Vector2(0.5, 0.5)
 [node name="Jugador" parent="." instance=ExtResource("1_am1it")]
 position = Vector2(172, 750)
 
-[node name="Gaseosa" parent="." instance=ExtResource("5_5e773")]
-position = Vector2(1131, 871)
-
 [node name="Sifon2" parent="." instance=ExtResource("4_c6q8b")]
 position = Vector2(924, 851)
 
-[node name="Champagne" parent="." instance=ExtResource("6_kkhy3")]
-position = Vector2(1319, 823)
+[node name="ZonaMuerta" type="Area2D" parent="."]
 
-[node name="Piso" type="TileMap" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ZonaMuerta"]
+position = Vector2(1847, 1349.5)
+shape = SubResource("RectangleShape2D_6a1mt")
+
+[node name="Pared" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Pared"]
+position = Vector2(-31.5, 474)
+shape = SubResource("RectangleShape2D_ej8n2")
+
+[node name="Background" type="Node" parent="."]
+
+[node name="Nube2" type="Sprite2D" parent="Background"]
+z_index = -2
+position = Vector2(217, 95)
+texture = ExtResource("27_s0p6h")
+
+[node name="Nube3" type="Sprite2D" parent="Background"]
+z_index = -2
+position = Vector2(300, 391)
+texture = ExtResource("28_bl3y2")
+
+[node name="Nube4" type="Sprite2D" parent="Background"]
+z_index = -2
+position = Vector2(697, 180)
+texture = ExtResource("29_62u20")
+
+[node name="Nube5" type="Sprite2D" parent="Background"]
+z_index = -2
+position = Vector2(852, 373)
+texture = ExtResource("30_xy7ww")
+
+[node name="Nube6" type="Sprite2D" parent="Background"]
+z_index = -2
+position = Vector2(1268, 151)
+texture = ExtResource("31_v84lr")
+
+[node name="Nube1" type="Sprite2D" parent="Background"]
+z_index = -2
+position = Vector2(1876, 202)
+texture = ExtResource("32_cbu2j")
+
+[node name="Nube7" type="Sprite2D" parent="Background"]
+z_index = -2
+position = Vector2(1449, 259)
+texture = ExtResource("27_s0p6h")
+
+[node name="Nube8" type="Sprite2D" parent="Background"]
+z_index = -2
+position = Vector2(1995, 492)
+texture = ExtResource("29_62u20")
+
+[node name="Nube9" type="Sprite2D" parent="Background"]
+z_index = -2
+position = Vector2(1777, 39)
+texture = ExtResource("30_xy7ww")
+
+[node name="Nube10" type="Sprite2D" parent="Background"]
+z_index = -2
+position = Vector2(2280, 56)
+texture = ExtResource("31_v84lr")
+
+[node name="Cielo" type="Sprite2D" parent="Background"]
+z_index = -3
+position = Vector2(1158.75, 645)
+scale = Vector2(3.39458, 4.62411)
+texture = ExtResource("26_mivrp")
+
+[node name="Mar" type="Sprite2D" parent="Background"]
+z_index = -2
+position = Vector2(1861, 1273)
+scale = Vector2(1.30221, 1.55882)
+texture = ExtResource("33_rfgfm")
+
+[node name="Piso" type="TileMap" parent="Background"]
 z_index = -1
 tile_set = SubResource("TileSet_d5ows")
 rendering_quadrant_size = 128
 format = 2
-layer_0/tile_data = PackedInt32Array(458752, 21, 0, 458753, 22, 0, 458754, 22, 0, 458755, 22, 0, 458756, 22, 0, 458757, 22, 0, 458758, 22, 0, 458759, 22, 0, 458760, 22, 0, 458761, 22, 0, 458762, 23, 0, 524288, 24, 0, 589824, 24, 0, 524298, 26, 0, 589834, 26, 0, 524289, 25, 0, 589825, 25, 0, 589826, 25, 0, 524290, 25, 0, 524291, 25, 0, 524292, 25, 0, 524293, 25, 0, 524294, 25, 0, 524295, 25, 0, 524296, 25, 0, 524297, 25, 0, 589833, 25, 0, 589832, 25, 0, 589831, 25, 0, 589830, 25, 0, 589829, 25, 0, 589828, 25, 0, 589827, 25, 0, 655360, 24, 0, 655361, 25, 0, 655362, 25, 0, 655363, 25, 0, 655364, 25, 0, 655365, 25, 0, 655366, 25, 0, 655367, 25, 0, 655368, 25, 0, 655369, 25, 0, 655370, 26, 0, 458763, 37, 0, 458764, 37, 0, 458765, 37, 0, 458766, 37, 0, 458767, 37, 0, 458768, 37, 0, 458769, 37, 0, 458770, 37, 0, 327692, 35, 268435456, 327693, 34, 0, 327694, 35, 0)
+layer_0/tile_data = PackedInt32Array(458752, 22, 0, 458753, 22, 0, 458754, 22, 0, 458755, 22, 0, 458756, 22, 0, 458757, 22, 0, 458758, 22, 0, 458759, 22, 0, 458760, 22, 0, 458761, 22, 0, 458762, 23, 0, 524288, 25, 0, 589824, 25, 0, 524298, 26, 0, 589834, 26, 0, 524289, 25, 0, 589825, 25, 0, 589826, 25, 0, 524290, 25, 0, 524291, 25, 0, 524292, 25, 0, 524293, 25, 0, 524294, 25, 0, 524295, 25, 0, 524296, 25, 0, 524297, 25, 0, 589833, 25, 0, 589832, 25, 0, 589831, 25, 0, 589830, 25, 0, 589829, 25, 0, 589828, 25, 0, 589827, 25, 0, 655360, 25, 0, 655361, 25, 0, 655362, 25, 0, 655363, 25, 0, 655364, 25, 0, 655365, 25, 0, 655366, 25, 0, 655367, 25, 0, 655368, 25, 0, 655369, 25, 0, 655370, 26, 0, 327692, 35, 268435456, 327693, 34, 0, 327694, 34, 0, 327695, 34, 0, 327696, 34, 0, 327697, 34, 0, 327698, 34, 0, 524287, 21, 0, 589823, 24, 0, 655359, 24, 0, 720895, 24, 0)
 
-[node name="Fondo" type="TileMap" parent="."]
+[node name="Fondo" type="TileMap" parent="Background"]
 tile_set = SubResource("TileSet_d5ows")
 rendering_quadrant_size = 128
 format = 2
 layer_0/z_index = -2
-layer_0/tile_data = PackedInt32Array(524299, 38, 0, 589835, 38, 0, 655371, 38, 0, 655372, 38, 0, 589836, 38, 0, 524300, 38, 0, 589837, 38, 0, 524301, 38, 0, 655373, 38, 0, 589838, 38, 0, 524302, 38, 0, 655374, 38, 0, 589839, 38, 0, 524303, 38, 0, 655375, 38, 0, 524298, 38, 0, 589834, 38, 0, 655370, 38, 0, 524304, 38, 0, 589840, 38, 0, 655376, 38, 0, 720912, 38, 0, 655377, 38, 0, 589841, 38, 0, 524305, 38, 0, 524306, 38, 0, 589842, 38, 0, 655378, 38, 0, 0, 41, 0, 393216, 41, 3, 393217, 65577, 3, 393218, 131113, 3, 393219, 196649, 3, 393220, 262185, 3, 393221, 327721, 3, 393222, 393257, 3, 393223, 458793, 3, 393224, 524329, 3, 393225, 41, 3, 393226, 41, 3, 393227, 65577, 3, 393228, 131113, 3, 393229, 196649, 3, 393230, 262185, 3, 393231, 327721, 3, 393232, 393257, 3, 393233, 458793, 3, 393234, 524329, 3, 327680, 65577, 3, 327681, 131113, 3, 327682, 196649, 3, 327683, 262185, 3, 327684, 65577, 3, 327685, 131113, 3, 327686, 196649, 3, 327687, 65577, 3, 327688, 131113, 3, 327689, 65577, 3, 327690, 131113, 3, 327691, 65577, 3, 327692, 131113, 3, 327693, 196649, 3, 327694, 262185, 3, 327695, 327721, 3, 327696, 393257, 3, 327697, 458793, 3, 327698, 524329, 3, 458763, 65577, 3, 458764, 131113, 3, 458765, 196649, 3, 458766, 262185, 3, 458767, 327721, 3, 458768, 393257, 3, 458769, 458793, 3, 458770, 524329, 3, 262144, 41, 3, 262145, 65577, 3, 262146, 131113, 3, 262147, 196649, 3, 262148, 262185, 3, 262149, 327721, 3, 262150, 393257, 3, 262151, 458793, 3, 262152, 524329, 3, 262153, 41, 3, 262154, 41, 3, 262155, 65577, 3, 262156, 131113, 3, 262157, 196649, 3, 262158, 262185, 3, 262159, 327721, 3, 262160, 393257, 3, 262161, 458793, 3, 262162, 524329, 3, 196609, 41, 2, 196610, 65577, 2, 131077, 262185, 1, 131078, 65577, 2, 196619, 41, 2, 196620, 65577, 2, 131073, 41, 1, 131074, 65577, 1, 65541, 41, 1, 65542, 65577, 1, 131083, 41, 1, 131084, 65577, 1, 65543, 131113, 1, 65544, 196649, 1, 131075, 131113, 1, 131076, 196649, 1, 131085, 131113, 1, 131086, 196649, 1, 65538, 65577, 0, 65539, 131113, 0, 65540, 196649, 0, 6, 65577, 0, 7, 131113, 0, 8, 196649, 0, 65548, 65577, 0, 65549, 131113, 0, 65550, 196649, 0, 131080, 196649, 2, 65545, 262185, 1, 131081, 262185, 2, 196612, 196649, 2, 196613, 262185, 2, 196622, 196649, 2, 131087, 262185, 1, 196623, 262185, 2, -65521, 327721, 0, 15, 327721, 1, -65520, 393257, 0, 16, 393257, 1, -65519, 458793, 0, 17, 458793, 1, -65518, 524329, 0, 18, 524329, 1, 131089, 327721, 0, 196625, 131113, 2, 131090, 393257, 0, 196626, 131113, 2, 131091, 458793, 0, 196627, 131113, 2, 131092, 524329, 0, 196628, 131113, 2, 196614, 131113, 2, 196615, 131113, 2, 196616, 131113, 2, 196617, 131113, 2, 196618, 131113, 2, 131079, 131113, 2, 196611, 131113, 2, 196621, 131113, 2, 196624, 131113, 2, 131088, 524329, 0, 196608, 131113, 2)
 
 [connection signal="body_entered" from="PuntoDestino" to="." method="llegar_a_destino"]
+[connection signal="body_entered" from="ZonaMuerta" to="." method="zona_muerta"]
