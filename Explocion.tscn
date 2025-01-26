@@ -1,0 +1,34 @@
+[gd_scene load_steps=7 format=3 uid="uid://b0waduu3hdgx2"]
+
+[ext_resource type="Texture2D" uid="uid://by3qsbytpa5j4" path="res://Resources/Sprites/Sodero/Explosion/explo 1.png" id="1_qtvbl"]
+[ext_resource type="Texture2D" uid="uid://bnbjrdsgw4qvy" path="res://Resources/Sprites/Sodero/Explosion/explo 2.png" id="2_b5t4n"]
+[ext_resource type="Texture2D" uid="uid://ck7aiundr4wfd" path="res://Resources/Sprites/Sodero/Explosion/explo 3.png" id="3_gmlm4"]
+[ext_resource type="Texture2D" uid="uid://b35iwionfnyml" path="res://Resources/Sprites/Sodero/Explosion/explo 4.png" id="4_4a37h"]
+[ext_resource type="Texture2D" uid="uid://lhhy528ff18p" path="res://Resources/Sprites/Sodero/Explosion/explo 5.png" id="5_st4lo"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6gm4j"]
+animations = [{
+"frames": [{
+"duration": 0.5,
+"texture": ExtResource("1_qtvbl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_b5t4n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_gmlm4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_4a37h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_st4lo")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_6gm4j")
+frame_progress = 0.425766
