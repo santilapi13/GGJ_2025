@@ -260,7 +260,7 @@ position = Vector2(0, -96)
 target_position = Vector2(150, 0)
 
 [node name="RayCastD2" type="RayCast2D" parent="Rays"]
-position = Vector2(0, 69)
+position = Vector2(1, 19)
 target_position = Vector2(150, 0)
 
 [node name="RayCastA1" type="RayCast2D" parent="Rays"]
@@ -276,14 +276,14 @@ position = Vector2(-1, -95)
 target_position = Vector2(-150, 0)
 
 [node name="RayCastI2" type="RayCast2D" parent="Rays"]
-position = Vector2(0, 69)
+position = Vector2(1, 19)
 target_position = Vector2(-150, 0)
 
 [node name="RayCastB1" type="RayCast2D" parent="Rays"]
-position = Vector2(-20, 86)
+position = Vector2(-19, 36)
 
 [node name="RayCastB2" type="RayCast2D" parent="Rays"]
-position = Vector2(22, 87)
+position = Vector2(23, 37)
 
 [node name="Anim" type="AnimationPlayer" parent="."]
 libraries = {
