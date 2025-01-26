@@ -39,7 +39,7 @@ radius = 500.0
 height = 1500.0
 
 [node name="Champagne" type="AnimatedSprite2D"]
-scale = Vector2(0.02, 0.02)
+scale = Vector2(0.08, 0.08)
 sprite_frames = SubResource("SpriteFrames_a1t1x")
 animation = &"champagne_idle"
 autoplay = "champagne_idle"
