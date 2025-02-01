@@ -1,4 +1,4 @@
-[gd_scene load_steps=57 format=3 uid="uid://b7oicpvb8wxsh"]
+[gd_scene load_steps=58 format=3 uid="uid://b7oicpvb8wxsh"]
 
 [ext_resource type="Script" path="res://Scripts/nivel.gd" id="1_4y3ay"]
 [ext_resource type="PackedScene" uid="uid://y012ctmcp5j3" path="res://Scenes/Sodero.tscn" id="2_8gcie"]
@@ -32,6 +32,7 @@
 [ext_resource type="PackedScene" uid="uid://rytanwagpmoy" path="res://Scenes/Bebidas/champagne.tscn" id="30_qgq5h"]
 [ext_resource type="PackedScene" uid="uid://ddi8sx3rv5ach" path="res://Scenes/Bebidas/sifon.tscn" id="31_mov7a"]
 [ext_resource type="Texture2D" uid="uid://cxlxdktslq52u" path="res://Resources/Sprites/CajonesTarget/cajon sifon.png" id="32_0mau3"]
+[ext_resource type="Texture2D" uid="uid://bdi84dljr1gj6" path="res://Resources/Sprites/Burbujas/burbuja encapsuladora de bebidas.png" id="32_x0nhd"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rdoln"]
 radius = 34.1631
@@ -431,14 +432,26 @@ layer_0/tile_data = PackedInt32Array(589824, 21, 0, 589825, 22, 0, 589826, 22, 0
 [node name="Champagne" parent="." instance=ExtResource("30_qgq5h")]
 position = Vector2(972, 1161)
 
+[node name="BurbujaEncapsuladoraDeBebidas" type="Sprite2D" parent="Champagne"]
+position = Vector2(0, -100)
+texture = ExtResource("32_x0nhd")
+
 [node name="Sifon" parent="." instance=ExtResource("31_mov7a")]
 position = Vector2(450, 1096)
 
 [node name="Champagne2" parent="." instance=ExtResource("30_qgq5h")]
 position = Vector2(1456, 1151)
 
+[node name="BurbujaEncapsuladoraDeBebidas" type="Sprite2D" parent="Champagne2"]
+position = Vector2(0, -100)
+texture = ExtResource("32_x0nhd")
+
 [node name="Champagne3" parent="." instance=ExtResource("30_qgq5h")]
 position = Vector2(1725, 666)
+
+[node name="BurbujaEncapsuladoraDeBebidas" type="Sprite2D" parent="Champagne3"]
+position = Vector2(0, -100)
+texture = ExtResource("32_x0nhd")
 
 [connection signal="body_entered" from="PuntoDestino" to="." method="llegar_a_destino"]
 [connection signal="body_entered" from="ZonaMuerta" to="." method="morir"]

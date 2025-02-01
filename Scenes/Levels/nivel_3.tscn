@@ -1,4 +1,4 @@
-[gd_scene load_steps=56 format=3 uid="uid://pime775egpec"]
+[gd_scene load_steps=57 format=3 uid="uid://pime775egpec"]
 
 [ext_resource type="Script" path="res://Scripts/nivel.gd" id="1_1g1ma"]
 [ext_resource type="PackedScene" uid="uid://y012ctmcp5j3" path="res://Scenes/Sodero.tscn" id="2_d33wv"]
@@ -31,6 +31,7 @@
 [ext_resource type="Texture2D" uid="uid://cl05n315a6iv1" path="res://Resources/Sprites/Tiles/19.png" id="30_vs4le"]
 [ext_resource type="Texture2D" uid="uid://b63ktwbj06kl5" path="res://Resources/Sprites/Tiles/sky.png" id="31_5f3qe"]
 [ext_resource type="Texture2D" uid="uid://bakcwqehq0ef" path="res://Resources/Sprites/CajonesTarget/cajon gaseosa solo.png" id="31_78g2y"]
+[ext_resource type="Texture2D" uid="uid://bdi84dljr1gj6" path="res://Resources/Sprites/Burbujas/burbuja encapsuladora de bebidas.png" id="32_55cyr"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rdoln"]
 radius = 34.1631
@@ -428,6 +429,10 @@ layer_0/tile_data = PackedInt32Array(655375, 25, 0, 655376, 25, 0, 655377, 25, 0
 
 [node name="Gaseosa" parent="." instance=ExtResource("30_ajw5j")]
 position = Vector2(367, 375)
+
+[node name="BurbujaEncapsuladoraDeBebidas" type="Sprite2D" parent="Gaseosa"]
+position = Vector2(0, -100)
+texture = ExtResource("32_55cyr")
 
 [connection signal="body_entered" from="PuntoDestino" to="." method="llegar_a_destino"]
 [connection signal="body_entered" from="ZonaMuerta" to="." method="morir"]
