@@ -3,7 +3,7 @@ extends EstadoBebida
 @export var fuerza_de_salto = 100.0
 
 @export var estado_cayendo: Estado
-@onready var explosion = "res://Explocion.tscn"
+@onready var explosion = "res://Scenes/Explocion.tscn"
 
 func activarse():
 	super()

@@ -1,4 +1,4 @@
-[gd_scene load_steps=55 format=3 uid="uid://ci4dfgg7ydhkn"]
+[gd_scene load_steps=56 format=3 uid="uid://ci4dfgg7ydhkn"]
 
 [ext_resource type="PackedScene" uid="uid://y012ctmcp5j3" path="res://Scenes/Sodero.tscn" id="1_am1it"]
 [ext_resource type="Script" path="res://Scripts/nivel.gd" id="1_e22bm"]
@@ -27,13 +27,14 @@
 [ext_resource type="Texture2D" uid="uid://hqdengy5uwpb" path="res://Resources/Sprites/Fondo/nube3.png" id="28_bl3y2"]
 [ext_resource type="Texture2D" uid="uid://dqqhuh8ycbs5o" path="res://Resources/Sprites/Fondo/nube4.png" id="29_62u20"]
 [ext_resource type="Texture2D" uid="uid://bm5m1ju3tbdrm" path="res://Resources/Sprites/Fondo/nube5.png" id="30_xy7ww"]
+[ext_resource type="Texture2D" uid="uid://cxlxdktslq52u" path="res://Resources/Sprites/CajonesTarget/cajon sifon.png" id="31_dgtfi"]
 [ext_resource type="Texture2D" uid="uid://17ot5cu81oyb" path="res://Resources/Sprites/Fondo/nube6.png" id="31_v84lr"]
 [ext_resource type="Texture2D" uid="uid://ddo2es2xvflix" path="res://Resources/Sprites/Fondo/nube1.png" id="32_cbu2j"]
 [ext_resource type="Texture2D" uid="uid://5vm31ell4d5t" path="res://Resources/Sprites/Fondo/mar.png" id="33_rfgfm"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rdoln"]
-radius = 34.1631
-height = 935.578
+radius = 63.1149
+height = 948.602
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6a1mt"]
 size = Vector2(2388, 123)
@@ -329,9 +330,15 @@ position = Vector2(171, 772)
 position = Vector2(43, 52)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PuntoDestino"]
-position = Vector2(2299, 195)
+position = Vector2(2158, 188)
 scale = Vector2(1.72701, 0.921356)
 shape = SubResource("CapsuleShape2D_rdoln")
+
+[node name="WinPoint" type="Sprite2D" parent="PuntoDestino"]
+z_index = -1
+position = Vector2(2156, 514)
+scale = Vector2(0.03, 0.03)
+texture = ExtResource("31_dgtfi")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 anchor_mode = 0

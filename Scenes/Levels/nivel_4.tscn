@@ -1,4 +1,4 @@
-[gd_scene load_steps=56 format=3 uid="uid://bilyd4y0alu6v"]
+[gd_scene load_steps=57 format=3 uid="uid://bilyd4y0alu6v"]
 
 [ext_resource type="Script" path="res://Scripts/nivel.gd" id="1_nrelf"]
 [ext_resource type="PackedScene" uid="uid://y012ctmcp5j3" path="res://Scenes/Sodero.tscn" id="2_jjbok"]
@@ -30,11 +30,12 @@
 [ext_resource type="Texture2D" uid="uid://dbc1d05k2gl72" path="res://Resources/Sprites/Tiles/18.png" id="29_yno2o"]
 [ext_resource type="Texture2D" uid="uid://cl05n315a6iv1" path="res://Resources/Sprites/Tiles/19.png" id="30_sp1kb"]
 [ext_resource type="Texture2D" uid="uid://b63ktwbj06kl5" path="res://Resources/Sprites/Tiles/sky.png" id="31_wh318"]
+[ext_resource type="Texture2D" uid="uid://dgdo3fnaf5bp1" path="res://Resources/Sprites/CajonesTarget/cajon gaseosa.png" id="32_8rxyx"]
 [ext_resource type="PackedScene" uid="uid://crdu7vgfqg37e" path="res://Scenes/Bebidas/gaseosa.tscn" id="32_86fj0"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rdoln"]
 radius = 34.1631
-height = 2587.49
+height = 2544.08
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6a1mt"]
 size = Vector2(2663, 75)
@@ -331,9 +332,15 @@ position = Vector2(107, 1066)
 position = Vector2(43, 52)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PuntoDestino"]
-position = Vector2(2299, 195)
+position = Vector2(2077, 217)
 scale = Vector2(1.72701, 0.921356)
 shape = SubResource("CapsuleShape2D_rdoln")
+
+[node name="WinPoint" type="Sprite2D" parent="PuntoDestino"]
+z_index = -1
+position = Vector2(2128, 769)
+scale = Vector2(0.03, 0.03)
+texture = ExtResource("32_8rxyx")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 anchor_mode = 0
