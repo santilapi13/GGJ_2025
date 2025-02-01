@@ -4,6 +4,7 @@ const PREFAB_CORCHO: String = ""
 
 func _ready():
 	textura_brazos = preload("res://Resources/Sprites/Sodero/Correr/champ brazo.png")
+	icono = preload("res://Resources/Sprites/champagne.png")
 	pass
 
 func descorchar():

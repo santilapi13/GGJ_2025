@@ -5,6 +5,7 @@ var indice_esfervecencia: float
 
 func _ready():
 	textura_brazos = preload("res://Resources/Sprites/Sodero/Correr/gaseosa brazo nuevo.png")
+	icono = preload("res://Resources/Sprites/gaseosa.png")
 
 func prepararse():
 	indice_esfervecencia = 0

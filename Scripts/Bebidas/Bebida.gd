@@ -5,7 +5,8 @@ class_name Bebida
 @export var codigo_animacion: String
 
 @onready var controlador_bebidas = get_parent()
-@onready var jugador: CharacterBody2D = controlador_bebidas.get_parent() 
+@onready var jugador: CharacterBody2D = controlador_bebidas.get_parent()
+var icono : Texture
 
 var textura_brazos : Texture
 
