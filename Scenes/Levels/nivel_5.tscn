@@ -1,4 +1,4 @@
-[gd_scene load_steps=56 format=3 uid="uid://bg1fgpjh3jnkq"]
+[gd_scene load_steps=57 format=3 uid="uid://bg1fgpjh3jnkq"]
 
 [ext_resource type="Script" path="res://Scripts/nivel.gd" id="1_l11kh"]
 [ext_resource type="PackedScene" uid="uid://y012ctmcp5j3" path="res://Scenes/Sodero.tscn" id="2_pysih"]
@@ -31,6 +31,7 @@
 [ext_resource type="Texture2D" uid="uid://b63ktwbj06kl5" path="res://Resources/Sprites/Tiles/sky.png" id="30_e16tq"]
 [ext_resource type="PackedScene" uid="uid://rytanwagpmoy" path="res://Scenes/Bebidas/champagne.tscn" id="30_s3w0e"]
 [ext_resource type="Texture2D" uid="uid://ejd5rbejgyf1" path="res://Resources/Sprites/CajonesTarget/cajon champ solo.png" id="31_dk6yc"]
+[ext_resource type="Texture2D" uid="uid://bdi84dljr1gj6" path="res://Resources/Sprites/Burbujas/burbuja encapsuladora de bebidas.png" id="32_nbmkb"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rdoln"]
 radius = 34.1631
@@ -368,18 +369,6 @@ z_index = -2
 position = Vector2(300, 391)
 texture = ExtResource("4_xu7e4")
 
-[node name="Nube4" type="Sprite2D" parent="Background"]
-z_index = -2
-position = Vector2(1134, 552)
-scale = Vector2(1.99562, 2.20921)
-texture = ExtResource("5_3e0j5")
-
-[node name="Nube7" type="Sprite2D" parent="Background"]
-z_index = -2
-position = Vector2(1108, 941)
-scale = Vector2(1.99562, 2.20921)
-texture = ExtResource("5_3e0j5")
-
 [node name="Nube5" type="Sprite2D" parent="Background"]
 z_index = -2
 position = Vector2(852, 373)
@@ -437,9 +426,17 @@ position = Vector2(469, 1083)
 z_index = -3
 position = Vector2(1107, 889)
 
+[node name="BurbujaEncapsuladoraDeBebidas" type="Sprite2D" parent="Champagne2"]
+position = Vector2(0, -100)
+texture = ExtResource("32_nbmkb")
+
 [node name="Champagne3" parent="." instance=ExtResource("30_s3w0e")]
 z_index = -3
 position = Vector2(1132, 496)
+
+[node name="BurbujaEncapsuladoraDeBebidas2" type="Sprite2D" parent="Champagne3"]
+position = Vector2(25, -150)
+texture = ExtResource("32_nbmkb")
 
 [connection signal="body_entered" from="PuntoDestino" to="." method="llegar_a_destino"]
 [connection signal="body_entered" from="ZonaMuerta" to="." method="morir"]

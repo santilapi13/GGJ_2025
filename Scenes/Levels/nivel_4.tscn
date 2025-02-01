@@ -1,9 +1,10 @@
-[gd_scene load_steps=57 format=3 uid="uid://bilyd4y0alu6v"]
+[gd_scene load_steps=58 format=3 uid="uid://bilyd4y0alu6v"]
 
 [ext_resource type="Script" path="res://Scripts/nivel.gd" id="1_nrelf"]
 [ext_resource type="PackedScene" uid="uid://y012ctmcp5j3" path="res://Scenes/Sodero.tscn" id="2_jjbok"]
 [ext_resource type="PackedScene" uid="uid://ddi8sx3rv5ach" path="res://Scenes/Bebidas/sifon.tscn" id="3_f00qw"]
 [ext_resource type="Texture2D" uid="uid://hqdengy5uwpb" path="res://Resources/Sprites/Fondo/nube3.png" id="5_cpp2g"]
+[ext_resource type="Texture2D" uid="uid://bdi84dljr1gj6" path="res://Resources/Sprites/Burbujas/burbuja encapsuladora de bebidas.png" id="5_eepr4"]
 [ext_resource type="Texture2D" uid="uid://dqqhuh8ycbs5o" path="res://Resources/Sprites/Fondo/nube4.png" id="6_2hsdj"]
 [ext_resource type="Texture2D" uid="uid://bm5m1ju3tbdrm" path="res://Resources/Sprites/Fondo/nube5.png" id="7_s7ugg"]
 [ext_resource type="Texture2D" uid="uid://17ot5cu81oyb" path="res://Resources/Sprites/Fondo/nube6.png" id="8_t7oa5"]
@@ -351,6 +352,10 @@ position = Vector2(172, 750)
 
 [node name="Sifon2" parent="." instance=ExtResource("3_f00qw")]
 position = Vector2(996, 497)
+
+[node name="BurbujaEncapsuladoraDeBebidas" type="Sprite2D" parent="Sifon2"]
+position = Vector2(0, -100)
+texture = ExtResource("5_eepr4")
 
 [node name="ZonaMuerta" type="Area2D" parent="."]
 
