@@ -1,4 +1,4 @@
-[gd_scene load_steps=55 format=3 uid="uid://bg1fgpjh3jnkq"]
+[gd_scene load_steps=56 format=3 uid="uid://bg1fgpjh3jnkq"]
 
 [ext_resource type="Script" path="res://Scripts/nivel.gd" id="1_l11kh"]
 [ext_resource type="PackedScene" uid="uid://y012ctmcp5j3" path="res://Scenes/Sodero.tscn" id="2_pysih"]
@@ -30,6 +30,7 @@
 [ext_resource type="Texture2D" uid="uid://cl05n315a6iv1" path="res://Resources/Sprites/Tiles/19.png" id="29_jbydc"]
 [ext_resource type="Texture2D" uid="uid://b63ktwbj06kl5" path="res://Resources/Sprites/Tiles/sky.png" id="30_e16tq"]
 [ext_resource type="PackedScene" uid="uid://rytanwagpmoy" path="res://Scenes/Bebidas/champagne.tscn" id="30_s3w0e"]
+[ext_resource type="Texture2D" uid="uid://ejd5rbejgyf1" path="res://Resources/Sprites/CajonesTarget/cajon champ solo.png" id="31_dk6yc"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rdoln"]
 radius = 34.1631
@@ -330,9 +331,15 @@ position = Vector2(107, 1066)
 position = Vector2(43, 52)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PuntoDestino"]
-position = Vector2(2299, 195)
+position = Vector2(2171, 206)
 scale = Vector2(1.72701, 0.921356)
 shape = SubResource("CapsuleShape2D_rdoln")
+
+[node name="WinPoint" type="Sprite2D" parent="PuntoDestino"]
+z_index = -1
+position = Vector2(2161, 736)
+scale = Vector2(0.0310826, 0.03)
+texture = ExtResource("31_dk6yc")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 anchor_mode = 0
