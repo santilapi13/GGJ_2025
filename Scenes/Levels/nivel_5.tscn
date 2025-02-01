@@ -351,7 +351,7 @@ position = Vector2(172, 750)
 [node name="ZonaMuerta" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ZonaMuerta"]
-position = Vector2(1402, 1294)
+position = Vector2(1292, 1404)
 shape = SubResource("RectangleShape2D_6a1mt")
 
 [node name="Pared" type="StaticBody2D" parent="."]

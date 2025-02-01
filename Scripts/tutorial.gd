@@ -30,7 +30,7 @@ func _input(event):
 	if event is InputEventMouseButton and event.pressed:
 		if pantalla_actual == len(texturas_intro):
 			SistemaJuego.comenzar_juego()
-		else:
+		elif pantalla_actual < len(texturas_intro):
 			anim.play('mostrar')
 			await anim.animation_finished
 			imagen_fondo.texture = texturas_intro[pantalla_actual]

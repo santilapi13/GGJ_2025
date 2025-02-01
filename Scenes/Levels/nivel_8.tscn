@@ -349,7 +349,7 @@ anchor_mode = 0
 zoom = Vector2(0.5, 0.5)
 
 [node name="Jugador" parent="." instance=ExtResource("2_0cyyf")]
-position = Vector2(172, 750)
+position = Vector2(358, 524)
 
 [node name="ZonaMuerta" type="Area2D" parent="."]
 position = Vector2(-64, 153)
