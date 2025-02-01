@@ -324,7 +324,7 @@ sources/38 = SubResource("TileSetAtlasSource_nyu8v")
 sources/40 = SubResource("TileSetAtlasSource_jum1p")
 sources/41 = SubResource("TileSetAtlasSource_u7fea")
 
-[node name="Nivel1" type="Node"]
+[node name="Nivel2" type="Node"]
 script = ExtResource("1_wnjc2")
 
 [node name="PuntoInicio" type="Marker2D" parent="."]

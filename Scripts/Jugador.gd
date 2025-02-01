@@ -13,6 +13,9 @@ extends CharacterBody2D
 @onready var rayA2:RayCast2D = $Rays/RayCastA2
 @onready var anim:AnimationPlayer = $Anim
 
+func _ready():
+	SistemaJuego.reiniciar.connect(reiniciar_nivel)
+
 func _physics_process(delta):
 	if Input.is_action_just_pressed("power"):
 		controlador_de_bebidas.usar_poder()
@@ -34,3 +37,6 @@ func levantar_bebida(bebida):
 
 func cambiar_brazos(sprite_brazos: Texture):
 	$Visuals/Brazos.texture = sprite_brazos
+
+func reiniciar_nivel():
+	controlador_de_bebidas.reiniciar_nivel()

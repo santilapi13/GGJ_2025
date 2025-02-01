@@ -6,6 +6,7 @@ var niveles : Array[String] = [
 	,"res://Scenes/Levels/nivel_8.tscn"
 ]
 var nivel_actual : int = -1
+signal reiniciar()
 @onready var anim : AnimationPlayer = $Transicion
 
 func cargar_escena(escena: String):
@@ -24,6 +25,7 @@ func comenzar_juego():
 
 func siguiente_nivel():
 	SistemaAudio.reproducir_sonido("Victoria")
+	reiniciar.emit()
 	if nivel_actual < niveles.size() - 1:
 		nivel_actual += 1
 		cargar_escena(niveles[nivel_actual])

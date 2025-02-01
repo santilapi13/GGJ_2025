@@ -45,9 +45,15 @@ func crear_icono(bebida):
 	icono_bebida.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
 	cola_bebidas_hud.add_child(icono_bebida)
 
-func actualizar_hud_cola():
+func reiniciar_nivel():
+	vaciar_iconos()
+
+func vaciar_iconos():
 	for child in cola_bebidas_hud.get_children():
 		child.queue_free()
+
+func actualizar_hud_cola():
+	vaciar_iconos()
 
 	if bebida_actual != bebidas_posibles[Bebidas.SIN_BEBIDA]:
 		crear_icono(bebida_actual)

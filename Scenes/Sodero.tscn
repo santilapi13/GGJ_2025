@@ -319,6 +319,8 @@ estado_cayendo = NodePath("../Cayendo")
 script = ExtResource("12_pw6hv")
 fuerza_de_salto = 1200.0
 estado_cayendo = NodePath("../Cayendo")
+velocidad_maxima = 250.0
+gravedad = 15.0
 
 [node name="ControladorBebidas" parent="." instance=ExtResource("7_c6l2r")]
 
@@ -382,9 +384,10 @@ autoplay = "Idle"
 
 [node name="HUD" type="CanvasLayer" parent="."]
 offset = Vector2(40, 0)
-scale = Vector2(0.67, 0.67)
-transform = Transform2D(0.67, 0, 0, 0.67, 40, 0)
+scale = Vector2(0.35, 0.35)
+transform = Transform2D(0.35, 0, 0, 0.35, 40, 0)
 
 [node name="ColaBebidasHUD" type="HBoxContainer" parent="HUD"]
+z_index = -2
 offset_right = 337.0
 offset_bottom = 341.0
