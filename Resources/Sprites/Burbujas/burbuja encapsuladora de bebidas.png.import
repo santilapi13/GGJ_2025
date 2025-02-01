@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cx7fak7jxh816"
-path="res://.godot/imported/FONDO TUTO.jpg-9bd01264b7dd1f082f0ac1509a7a4aa7.ctex"
+uid="uid://bdi84dljr1gj6"
+path="res://.godot/imported/burbuja encapsuladora de bebidas.png-2ccfb1a13a25644e2f71f8310fc6b08b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/FONDO TUTO.jpg"
-dest_files=["res://.godot/imported/FONDO TUTO.jpg-9bd01264b7dd1f082f0ac1509a7a4aa7.ctex"]
+source_file="res://Resources/Sprites/Burbujas/burbuja encapsuladora de bebidas.png"
+dest_files=["res://.godot/imported/burbuja encapsuladora de bebidas.png-2ccfb1a13a25644e2f71f8310fc6b08b.ctex"]
 
 [params]
 

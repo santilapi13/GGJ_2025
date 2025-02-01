@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://uof70670th63"
-path="res://.godot/imported/BOTON TUTO.png-c5b866b4af2bd7c88890c9c4ab55f983.ctex"
+uid="uid://l2nfovqm37cn"
+path="res://.godot/imported/cielo.png-c077ff01e8d9a14b3cd99b75464ab166.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/BOTON TUTO.png"
-dest_files=["res://.godot/imported/BOTON TUTO.png-c5b866b4af2bd7c88890c9c4ab55f983.ctex"]
+source_file="res://Resources/Sprites/Fondo/cielo.png"
+dest_files=["res://.godot/imported/cielo.png-c077ff01e8d9a14b3cd99b75464ab166.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ddo2es2xvflix"
-path="res://.godot/imported/nube1.png-c358bdb0f4563ce05537681022975678.ctex"
+uid="uid://c66wovh2uhg8t"
+path="res://.godot/imported/nube2.png-98b39905dd31d4f095995fd91c0a138a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Fondo/nube1.png"
-dest_files=["res://.godot/imported/nube1.png-c358bdb0f4563ce05537681022975678.ctex"]
+source_file="res://Resources/Sprites/Fondo/nube2.png"
+dest_files=["res://.godot/imported/nube2.png-98b39905dd31d4f095995fd91c0a138a.ctex"]
 
 [params]
 

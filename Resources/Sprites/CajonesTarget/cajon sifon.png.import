@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dnwhp1onuwl1p"
-path="res://.godot/imported/niebla parallax.png-dee12cfd28d261692ed624158e0036d6.ctex"
+uid="uid://cxlxdktslq52u"
+path="res://.godot/imported/cajon sifon.png-f3b35914ab801ae9b6fd8849ae62ddf8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Fondo/niebla parallax.png"
-dest_files=["res://.godot/imported/niebla parallax.png-dee12cfd28d261692ed624158e0036d6.ctex"]
+source_file="res://Resources/Sprites/CajonesTarget/cajon sifon.png"
+dest_files=["res://.godot/imported/cajon sifon.png-f3b35914ab801ae9b6fd8849ae62ddf8.ctex"]
 
 [params]
 

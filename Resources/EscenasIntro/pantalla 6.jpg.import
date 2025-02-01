@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://l2nfovqm37cn"
-path="res://.godot/imported/cielo.png-73bb91bd2a818e13290e31a01e50b78f.ctex"
+uid="uid://cjocak84ss3wi"
+path="res://.godot/imported/pantalla 6.jpg-84a645a67e4d2c918ead23e8920257be.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Fondo/cielo.png"
-dest_files=["res://.godot/imported/cielo.png-73bb91bd2a818e13290e31a01e50b78f.ctex"]
+source_file="res://Resources/EscenasIntro/pantalla 6.jpg"
+dest_files=["res://.godot/imported/pantalla 6.jpg-84a645a67e4d2c918ead23e8920257be.ctex"]
 
 [params]
 

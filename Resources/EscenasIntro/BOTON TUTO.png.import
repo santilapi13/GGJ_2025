@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bm5m1ju3tbdrm"
-path="res://.godot/imported/nube5.png-1cde6c6654d566a2b8e0baf0263372d9.ctex"
+uid="uid://uof70670th63"
+path="res://.godot/imported/BOTON TUTO.png-c537b4014c719463025a4d6cd8664598.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Fondo/nube5.png"
-dest_files=["res://.godot/imported/nube5.png-1cde6c6654d566a2b8e0baf0263372d9.ctex"]
+source_file="res://Resources/EscenasIntro/BOTON TUTO.png"
+dest_files=["res://.godot/imported/BOTON TUTO.png-c537b4014c719463025a4d6cd8664598.ctex"]
 
 [params]
 

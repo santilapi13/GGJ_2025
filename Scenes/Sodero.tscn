@@ -8,7 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://bbopqql71tddv" path="res://Resources/Sprites/Sodero/Idle/cara.png" id="3_hl3mt"]
 [ext_resource type="Texture2D" uid="uid://2o3smpeixhng" path="res://Resources/Sprites/Sodero/Caer/caida cabeza.png" id="3_w1vx0"]
 [ext_resource type="Texture2D" uid="uid://c05b6q72f0q0w" path="res://Resources/Sprites/Sodero/Idle/idle brazo.png" id="4_mndqu"]
-[ext_resource type="PackedScene" uid="uid://ci5h4gqptbprm" path="res://cuerpo_completo.tscn" id="5_b8j3u"]
+[ext_resource type="PackedScene" uid="uid://ci5h4gqptbprm" path="res://Scenes/cuerpo_completo.tscn" id="5_b8j3u"]
 [ext_resource type="Script" path="res://Scripts/Estados/Cayendo.gd" id="6_wies2"]
 [ext_resource type="PackedScene" uid="uid://cxj0jt6bpwro0" path="res://Scenes/controlador_bebidas.tscn" id="7_c6l2r"]
 [ext_resource type="Script" path="res://Scripts/Estados/EstadosBebidas/SinBebidaEstado.gd" id="7_oe8op"]

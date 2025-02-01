@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://hqdengy5uwpb"
-path="res://.godot/imported/nube3.png-32f5d294a9329daded80dd9a9ad64fa3.ctex"
+uid="uid://cx7fak7jxh816"
+path="res://.godot/imported/FONDO TUTO.jpg-72adcab82aac3500a5f6a85ee56ba669.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Fondo/nube3.png"
-dest_files=["res://.godot/imported/nube3.png-32f5d294a9329daded80dd9a9ad64fa3.ctex"]
+source_file="res://Resources/EscenasIntro/FONDO TUTO.jpg"
+dest_files=["res://.godot/imported/FONDO TUTO.jpg-72adcab82aac3500a5f6a85ee56ba669.ctex"]
 
 [params]
 

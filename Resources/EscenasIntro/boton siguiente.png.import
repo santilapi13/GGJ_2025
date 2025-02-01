@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c66wovh2uhg8t"
-path="res://.godot/imported/nube2.png-7d2078e8e99226d4d4d8ac1ade896d3d.ctex"
+uid="uid://bjorv8dkgr44k"
+path="res://.godot/imported/boton siguiente.png-e2aba87c139271bf40879a1deb50561a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Fondo/nube2.png"
-dest_files=["res://.godot/imported/nube2.png-7d2078e8e99226d4d4d8ac1ade896d3d.ctex"]
+source_file="res://Resources/EscenasIntro/boton siguiente.png"
+dest_files=["res://.godot/imported/boton siguiente.png-e2aba87c139271bf40879a1deb50561a.ctex"]
 
 [params]
 

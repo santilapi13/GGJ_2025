@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dqqhuh8ycbs5o"
-path="res://.godot/imported/nube4.png-f748f1593bf4ec7091e52141c78043c4.ctex"
+uid="uid://du2ktkjefrtyp"
+path="res://.godot/imported/pantalla 4.jpg-141f3ba238df8a00bdd6485e804b2c21.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Fondo/nube4.png"
-dest_files=["res://.godot/imported/nube4.png-f748f1593bf4ec7091e52141c78043c4.ctex"]
+source_file="res://Resources/EscenasIntro/pantalla 4.jpg"
+dest_files=["res://.godot/imported/pantalla 4.jpg-141f3ba238df8a00bdd6485e804b2c21.ctex"]
 
 [params]
 

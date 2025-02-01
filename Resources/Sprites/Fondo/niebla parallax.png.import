@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://btvywlp0oih13"
-path="res://.godot/imported/TUTO.png-5de0b051af56c0738b8cade73ee6faed.ctex"
+uid="uid://dnwhp1onuwl1p"
+path="res://.godot/imported/niebla parallax.png-8c9b0e10384d1d52db83c2c56fbc0a4c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/TUTO.png"
-dest_files=["res://.godot/imported/TUTO.png-5de0b051af56c0738b8cade73ee6faed.ctex"]
+source_file="res://Resources/Sprites/Fondo/niebla parallax.png"
+dest_files=["res://.godot/imported/niebla parallax.png-8c9b0e10384d1d52db83c2c56fbc0a4c.ctex"]
 
 [params]
 

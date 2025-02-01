@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bbqtt81wguu5i"
-path="res://.godot/imported/olas parallax.png-f6e046c41c21e5ca37a2eca083b2404f.ctex"
+uid="uid://dgdo3fnaf5bp1"
+path="res://.godot/imported/cajon gaseosa.png-5039a2f5f9e28647b543383f23e34f66.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Fondo/olas parallax.png"
-dest_files=["res://.godot/imported/olas parallax.png-f6e046c41c21e5ca37a2eca083b2404f.ctex"]
+source_file="res://Resources/Sprites/CajonesTarget/cajon gaseosa.png"
+dest_files=["res://.godot/imported/cajon gaseosa.png-5039a2f5f9e28647b543383f23e34f66.ctex"]
 
 [params]
 
