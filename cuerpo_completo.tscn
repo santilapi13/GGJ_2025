@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://dlcvxa7e1hqss"]
+[gd_scene load_steps=9 format=3 uid="uid://ci5h4gqptbprm"]
 
 [ext_resource type="Texture2D" uid="uid://by3qsbytpa5j4" path="res://Resources/Sprites/Sodero/Explosion/explo 1.png" id="1_7xaf6"]
 [ext_resource type="Texture2D" uid="uid://bnbjrdsgw4qvy" path="res://Resources/Sprites/Sodero/Explosion/explo 2.png" id="2_xpo3b"]
@@ -49,4 +49,4 @@ animations = [{
 
 [node name="CuerpoCompleto" type="AnimatedSprite2D"]
 sprite_frames = SubResource("SpriteFrames_6ge6t")
-animation = &"champagne"
+animation = &"explosion"

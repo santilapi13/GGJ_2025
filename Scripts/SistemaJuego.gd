@@ -28,8 +28,7 @@ func siguiente_nivel():
 		nivel_actual += 1
 		cargar_escena(niveles[nivel_actual])
 	else:
-		# TODO: Pantalla de juego finalizado
-		reiniciar_nivel()
+		cargar_escena("res://Scenes/Menues/MenuPrincipal.tscn")
 		print("GANASTE")
 
 func reiniciar_nivel():

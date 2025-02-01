@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://ssasu8nb58xm"
+path="res://.godot/imported/explosion champagne.wav-78ea0287025ad6864b2d28be198d3282.sample"
+
+[deps]
+
+source_file="res://Resources/SFX/explosion champagne.wav"
+dest_files=["res://.godot/imported/explosion champagne.wav-78ea0287025ad6864b2d28be198d3282.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

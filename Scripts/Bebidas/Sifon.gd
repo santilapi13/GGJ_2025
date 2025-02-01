@@ -25,6 +25,7 @@ func update(delta):
 			if contador_musiquita == 3:
 				contador_musiquita = -1
 		contador_musiquita += 1
+		SistemaAudio.reproducir_sonido("sifonazo")
 
 func descartarse():
 	estado.desactivarse()

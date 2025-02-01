@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cwrpdxc4i0bbf"
+path="res://.godot/imported/chorrito soda.wav-9fedf205c883ee5f2ebcffe8998cdd60.sample"
+
+[deps]
+
+source_file="res://Resources/SFX/chorrito soda.wav"
+dest_files=["res://.godot/imported/chorrito soda.wav-9fedf205c883ee5f2ebcffe8998cdd60.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

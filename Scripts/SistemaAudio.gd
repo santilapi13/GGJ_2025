@@ -7,10 +7,14 @@ var rutas_sfx : Dictionary = {
 	"Soda": "res://Resources/SFX/SoderoSifon.wav",
 	"sifon_palmerasA": "res://Resources/SFX/CHORRO 1 SODA.wav",
 	"sifon_palmerasB": "res://Resources/SFX/CHORRO 2 SODA.wav",
-	"Fallo": "res://Resources/SFX/Fallo.mp3"
+	"Fallo": "res://Resources/SFX/Fallo.mp3",
+	"sifonazo": "res://Resources/SFX/chorrito soda.wav",
+	"Explosion": "res://Resources/SFX/Explosion.wav",
+	"Champagne": "res://Resources/SFX/explosion champagne.wav"
 }
 var rutas_musica : Dictionary = {
-	"loop_juego": "res://Resources/Music/LOOP GAME.wav"
+	"loop_juego": "res://Resources/Music/LOOP GAME.wav",
+	"loop_menu": "res://Resources/Music/LOOP SALVATION.wav"
 	# TODO: Poner pares "nombrePista": "rutaPista"
 }
 var pistas_sfx : Dictionary = {}
@@ -30,6 +34,8 @@ func _ready():
 		
 	for ruta in rutas_sfx:
 		pistas_sfx[ruta] = load(rutas_sfx[ruta])
+		
+	reproducir_musica("loop_menu")
 
 func reproducir_musica(pista: String):
 	reproductor_musica.stream = pistas_musica[pista]

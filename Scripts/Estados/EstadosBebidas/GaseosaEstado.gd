@@ -3,20 +3,18 @@ extends EstadoBebida
 @export var fuerza_de_salto = 100.0
 
 @export var estado_cayendo: Estado
-
-@onready var cuerpo_completo: AnimatedSprite2D = $"../../Visuals/CuerpoCompleto"
+@onready var explosion = "res://Explocion.tscn"
 
 func activarse():
 	super()
 
-func salir():
-	cuerpo_completo.pause()
-	cuerpo_completo.visible = false
 
 func entrar():
-	cuerpo_completo.visible = true
-	cuerpo_completo.play("explosion")
-
+	var instance = load(explosion).instantiate()
+	add_child(instance)
+	instance.position = jugador.position
+	SistemaAudio.reproducir_sonido("Explosion")
+	
 	if jugador.rayB1.is_colliding() or jugador.rayB2.is_colliding():
 		jugador.velocity.y  += -fuerza_de_salto * 2
 		
