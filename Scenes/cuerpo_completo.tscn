@@ -1,39 +1,22 @@
-[gd_scene load_steps=9 format=3 uid="uid://ci5h4gqptbprm"]
+[gd_scene load_steps=6 format=3 uid="uid://ci5h4gqptbprm"]
 
-[ext_resource type="Texture2D" uid="uid://by3qsbytpa5j4" path="res://Resources/Sprites/Sodero/Explosion/explo 1.png" id="1_7xaf6"]
-[ext_resource type="Texture2D" uid="uid://bnbjrdsgw4qvy" path="res://Resources/Sprites/Sodero/Explosion/explo 2.png" id="2_xpo3b"]
-[ext_resource type="Texture2D" uid="uid://ck7aiundr4wfd" path="res://Resources/Sprites/Sodero/Explosion/explo 3.png" id="3_t2xww"]
-[ext_resource type="Texture2D" uid="uid://b35iwionfnyml" path="res://Resources/Sprites/Sodero/Explosion/explo 4.png" id="4_lh6qj"]
-[ext_resource type="Texture2D" uid="uid://lhhy528ff18p" path="res://Resources/Sprites/Sodero/Explosion/explo 5.png" id="5_5lsv7"]
+[ext_resource type="Texture2D" uid="uid://byjl6aji1ngal" path="res://Resources/Sprites/Sodero/Champagne/champ propulsion1.png" id="1_4hiea"]
+[ext_resource type="Texture2D" uid="uid://nwhkpso44tky" path="res://Resources/Sprites/Sodero/Champagne/champ propulsion2.png" id="2_wxlm1"]
 [ext_resource type="Texture2D" uid="uid://tp8lcner2w43" path="res://Resources/Sprites/Sodero/Sifon/soda 2.png" id="6_vorpu"]
 [ext_resource type="Texture2D" uid="uid://cy1766kc4s3v8" path="res://Resources/Sprites/Sodero/Sifon/soda 3.png" id="7_7wuso"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_6ge6t"]
 animations = [{
-"frames": [],
-"loop": true,
-"name": &"champagne",
-"speed": 5.0
-}, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_7xaf6")
+"texture": ExtResource("1_4hiea")
 }, {
 "duration": 1.0,
-"texture": ExtResource("2_xpo3b")
-}, {
-"duration": 1.0,
-"texture": ExtResource("3_t2xww")
-}, {
-"duration": 1.0,
-"texture": ExtResource("4_lh6qj")
-}, {
-"duration": 1.0,
-"texture": ExtResource("5_5lsv7")
+"texture": ExtResource("2_wxlm1")
 }],
-"loop": true,
-"name": &"explosion",
-"speed": 15.0
+"loop": false,
+"name": &"champagne",
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -49,4 +32,6 @@ animations = [{
 
 [node name="CuerpoCompleto" type="AnimatedSprite2D"]
 sprite_frames = SubResource("SpriteFrames_6ge6t")
-animation = &"explosion"
+animation = &"champagne"
+frame = 1
+frame_progress = 1.0

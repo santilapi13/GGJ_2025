@@ -319,6 +319,8 @@ estado_cayendo = NodePath("../Cayendo")
 script = ExtResource("12_pw6hv")
 fuerza_de_salto = 1200.0
 estado_cayendo = NodePath("../Cayendo")
+velocidad_maxima = 250.0
+gravedad = 15.0
 
 [node name="ControladorBebidas" parent="." instance=ExtResource("7_c6l2r")]
 
