@@ -20,10 +20,13 @@ You can see a gameplay (it contains spoilers) here: https://www.youtube.com/watc
 Devs
 - Nahuel Bianca
 - Santiago Lapiana
+
 Art
 - Yamil Tahuil
+
 Music
 - Valentín Cueva Buono
+
 Game Design
 - Dante Rizzi
 
