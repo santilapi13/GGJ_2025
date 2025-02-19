@@ -11,7 +11,7 @@ var icono : Texture
 var textura_brazos : Texture
 
 func _ready():
-	textura_brazos = preload("res://Resources/Sprites/Sodero/Idle/idle brazo.png")
+	textura_brazos = preload("res://Resources/Sprites/SoderoV1/Idle/idle brazo.png")
 
 func prepararse():
 	jugador.cambiar_brazos(textura_brazos)

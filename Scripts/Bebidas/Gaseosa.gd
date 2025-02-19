@@ -4,7 +4,7 @@ var indice_esfervecencia: float
 @export var efervecencia_maxima: float = 1000
 
 func _ready():
-	textura_brazos = preload("res://Resources/Sprites/Sodero/Correr/gaseosa brazo nuevo.png")
+	textura_brazos = preload("res://Resources/Sprites/SoderoV1/Correr/gaseosa brazo nuevo.png")
 	icono = preload("res://Resources/Sprites/gaseosa.png")
 
 func prepararse():

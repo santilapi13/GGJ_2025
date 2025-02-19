@@ -5,7 +5,7 @@ var soda_restante: float = 2
 var contador_musiquita: int = 0
 
 func _ready():
-	textura_brazos = preload("res://Resources/Sprites/Sodero/Correr/soda.png")
+	textura_brazos = preload("res://Resources/Sprites/SoderoV1/Correr/soda.png")
 	icono = preload("res://Resources/Sprites/sifon.png")
 
 func prepararse():
