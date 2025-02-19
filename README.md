@@ -1,8 +1,8 @@
-# Soda Boom - Global Game Jam 2025 🌐🎮 - Topic: Bubble
+# Soda Boom - Global Game Jam 2025 🌐🎮
 ![0 REFERENCIA COPIA](https://github.com/user-attachments/assets/50d74046-b33a-4efb-b46f-f13df1e63ae2)
 
 ## What is Soda Boom?
-It's a videogame developed in Godot in 48 hours for the Global Game Jam 2025.
+It's a videogame developed in Godot in 48 hours for the Global Game Jam 2025. Topic of this year: Bubble
 
 Cocho the Soda Deliveryman receives a huge order that could save his business. He loads his truck to the brim. Instantly, the Joy Train crashes into his vehicle, destroying it and scattering the order all over the city.
 
