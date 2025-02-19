@@ -1,9 +1,9 @@
 [gd_scene load_steps=6 format=3 uid="uid://ci5h4gqptbprm"]
 
-[ext_resource type="Texture2D" uid="uid://byjl6aji1ngal" path="res://Resources/Sprites/Sodero/Champagne/champ propulsion1.png" id="1_4hiea"]
-[ext_resource type="Texture2D" uid="uid://nwhkpso44tky" path="res://Resources/Sprites/Sodero/Champagne/champ propulsion2.png" id="2_wxlm1"]
-[ext_resource type="Texture2D" uid="uid://tp8lcner2w43" path="res://Resources/Sprites/Sodero/Sifon/soda 2.png" id="6_vorpu"]
-[ext_resource type="Texture2D" uid="uid://cy1766kc4s3v8" path="res://Resources/Sprites/Sodero/Sifon/soda 3.png" id="7_7wuso"]
+[ext_resource type="Texture2D" uid="uid://byjl6aji1ngal" path="res://Resources/Sprites/SoderoV1/Champagne/champ propulsion1.png" id="1_4hiea"]
+[ext_resource type="Texture2D" uid="uid://nwhkpso44tky" path="res://Resources/Sprites/SoderoV1/Champagne/champ propulsion2.png" id="2_wxlm1"]
+[ext_resource type="Texture2D" uid="uid://tp8lcner2w43" path="res://Resources/Sprites/SoderoV1/Sifon/soda 2.png" id="6_vorpu"]
+[ext_resource type="Texture2D" uid="uid://cy1766kc4s3v8" path="res://Resources/Sprites/SoderoV1/Sifon/soda 3.png" id="7_7wuso"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_6ge6t"]
 animations = [{

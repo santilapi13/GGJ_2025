@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scripts/MenuPrincipal.gd" id="1_vyhvx"]
 [ext_resource type="Texture2D" uid="uid://cdp6bnx5w531" path="res://Resources/Sprites/Titulos/titulo1a.png" id="2_h8s4a"]
-[ext_resource type="Texture2D" uid="uid://cy1766kc4s3v8" path="res://Resources/Sprites/Sodero/Sifon/soda 3.png" id="3_cc0ae"]
+[ext_resource type="Texture2D" uid="uid://cy1766kc4s3v8" path="res://Resources/Sprites/SoderoV1/Sifon/soda 3.png" id="3_cc0ae"]
 [ext_resource type="FontFile" uid="uid://cncyop8odrqcn" path="res://Resources/Fonts/SodaLandFreeVersion.ttf" id="4_7tmib"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qo7fj"]
