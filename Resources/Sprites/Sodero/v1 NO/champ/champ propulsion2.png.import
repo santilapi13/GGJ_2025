@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://caml4gvyabyrm"
-path="res://.godot/imported/champ propulsion2.png-7f7b0364743cfe0e2da57a83a879c41c.ctex"
+path="res://.godot/imported/champ propulsion2.png-e371624fb049c77aaf2634d782eb2f16.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Sprites/SODERO/v1 NO/champ/champ propulsion2.png"
-dest_files=["res://.godot/imported/champ propulsion2.png-7f7b0364743cfe0e2da57a83a879c41c.ctex"]
+source_file="res://Resources/Sprites/Sodero/v1 NO/champ/champ propulsion2.png"
+dest_files=["res://.godot/imported/champ propulsion2.png-e371624fb049c77aaf2634d782eb2f16.ctex"]
 
 [params]
 

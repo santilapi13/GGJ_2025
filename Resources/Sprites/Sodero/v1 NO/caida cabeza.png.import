@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cagc1i14le4gw"
-path="res://.godot/imported/caida cabeza.png-fc4aa956fdc495d10eda661924176843.ctex"
+path="res://.godot/imported/caida cabeza.png-184d7c0b0613bf4255678b4444de6ad4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Sprites/SODERO/v1 NO/caida cabeza.png"
-dest_files=["res://.godot/imported/caida cabeza.png-fc4aa956fdc495d10eda661924176843.ctex"]
+source_file="res://Resources/Sprites/Sodero/v1 NO/caida cabeza.png"
+dest_files=["res://.godot/imported/caida cabeza.png-184d7c0b0613bf4255678b4444de6ad4.ctex"]
 
 [params]
 

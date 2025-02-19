@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://xflghr5lrdq8"
-path="res://.godot/imported/idle brazo.png-03007c135775231dc25e262b25392f25.ctex"
+path="res://.godot/imported/idle brazo.png-81d6a51c1f76c5649bd7b6da0ee55d03.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Sprites/SODERO/v1 NO/idle brazo.png"
-dest_files=["res://.godot/imported/idle brazo.png-03007c135775231dc25e262b25392f25.ctex"]
+source_file="res://Resources/Sprites/Sodero/v1 NO/idle brazo.png"
+dest_files=["res://.godot/imported/idle brazo.png-81d6a51c1f76c5649bd7b6da0ee55d03.ctex"]
 
 [params]
 

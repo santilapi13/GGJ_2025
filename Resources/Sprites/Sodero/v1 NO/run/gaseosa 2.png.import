@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://hnl2xj06vyix"
-path="res://.godot/imported/gaseosa 2.png-9340bc19ebd6c525d88127b51272de17.ctex"
+path="res://.godot/imported/gaseosa 2.png-acc2235f8589c6d9e7d90585bafbc9db.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Sprites/SODERO/v1 NO/run/gaseosa 2.png"
-dest_files=["res://.godot/imported/gaseosa 2.png-9340bc19ebd6c525d88127b51272de17.ctex"]
+source_file="res://Resources/Sprites/Sodero/v1 NO/run/gaseosa 2.png"
+dest_files=["res://.godot/imported/gaseosa 2.png-acc2235f8589c6d9e7d90585bafbc9db.ctex"]
 
 [params]
 

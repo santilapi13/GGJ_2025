@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c76xqi8d17pdf"
-path="res://.godot/imported/cabeza idle 2.png-53240a732cd7a455c4af1271aa96883c.ctex"
+path="res://.godot/imported/cabeza idle 2.png-fdc67f6ae031818201b19983ab900b78.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Sprites/SODERO/v2 idle/cabeza idle 2.png"
-dest_files=["res://.godot/imported/cabeza idle 2.png-53240a732cd7a455c4af1271aa96883c.ctex"]
+source_file="res://Resources/Sprites/Sodero/v2 idle/cabeza idle 2.png"
+dest_files=["res://.godot/imported/cabeza idle 2.png-fdc67f6ae031818201b19983ab900b78.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b1lff24niwuqo"
-path="res://.godot/imported/caida cuerpo.png-2161439901ad740450169a7cdb15786b.ctex"
+path="res://.godot/imported/caida cuerpo.png-36c632a503fa7822d95bea88e899c506.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Sprites/SODERO/v2 caida/caida cuerpo.png"
-dest_files=["res://.godot/imported/caida cuerpo.png-2161439901ad740450169a7cdb15786b.ctex"]
+source_file="res://Resources/Sprites/Sodero/v2 caida/caida cuerpo.png"
+dest_files=["res://.godot/imported/caida cuerpo.png-36c632a503fa7822d95bea88e899c506.ctex"]
 
 [params]
 

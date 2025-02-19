@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://prahm4bptui5"
-path="res://.godot/imported/fly champ cuerpo 2.png-28b54b49f3d74c0b67edfbc02d36c9a2.ctex"
+path="res://.godot/imported/fly champ cuerpo 2.png-384ea45495e98f00296d19f87a1b59d1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Sprites/SODERO/v2 fly/fly champ cuerpo 2.png"
-dest_files=["res://.godot/imported/fly champ cuerpo 2.png-28b54b49f3d74c0b67edfbc02d36c9a2.ctex"]
+source_file="res://Resources/Sprites/Sodero/v2 fly/fly champ cuerpo 2.png"
+dest_files=["res://.godot/imported/fly champ cuerpo 2.png-384ea45495e98f00296d19f87a1b59d1.ctex"]
 
 [params]
 

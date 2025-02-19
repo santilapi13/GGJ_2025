@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bek12f2nviskp"
-path="res://.godot/imported/run soda brazos.png-14f3c0eae889415120019ec599e186a6.ctex"
+path="res://.godot/imported/run soda brazos.png-88d95702ecb95fdd9d962e8c4ab9403a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Sprites/SODERO/v2 brazo bebidas/run soda brazos.png"
-dest_files=["res://.godot/imported/run soda brazos.png-14f3c0eae889415120019ec599e186a6.ctex"]
+source_file="res://Resources/Sprites/Sodero/v2 brazo bebidas/run soda brazos.png"
+dest_files=["res://.godot/imported/run soda brazos.png-88d95702ecb95fdd9d962e8c4ab9403a.ctex"]
 
 [params]
 

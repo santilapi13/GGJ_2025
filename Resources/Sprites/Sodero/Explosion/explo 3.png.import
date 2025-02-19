@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b7pptiibwbtnl"
-path="res://.godot/imported/explo 3.png-cff5f7de35627333ff4d976d7f0e476b.ctex"
+path="res://.godot/imported/explo 3.png-72d1bf1547e710fa83f041f209ba7e08.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Sprites/SODERO/explosion/explo 3.png"
-dest_files=["res://.godot/imported/explo 3.png-cff5f7de35627333ff4d976d7f0e476b.ctex"]
+source_file="res://Resources/Sprites/Sodero/Explosion/explo 3.png"
+dest_files=["res://.godot/imported/explo 3.png-72d1bf1547e710fa83f041f209ba7e08.ctex"]
 
 [params]
 

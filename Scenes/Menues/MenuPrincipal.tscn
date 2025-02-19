@@ -1,78 +1,316 @@
-[gd_scene load_steps=12 format=3 uid="uid://hqj52v312j8u"]
+[gd_scene load_steps=43 format=3 uid="uid://hqj52v312j8u"]
 
 [ext_resource type="Script" path="res://Scripts/MenuPrincipal.gd" id="1_vyhvx"]
-[ext_resource type="Texture2D" uid="uid://cdp6bnx5w531" path="res://Resources/Sprites/Titulos/titulo1a.png" id="2_h8s4a"]
-[ext_resource type="Texture2D" uid="uid://cy1766kc4s3v8" path="res://Resources/Sprites/SoderoV1/Sifon/soda 3.png" id="3_cc0ae"]
-[ext_resource type="FontFile" uid="uid://cncyop8odrqcn" path="res://Resources/Fonts/SodaLandFreeVersion.ttf" id="4_7tmib"]
+[ext_resource type="Texture2D" uid="uid://browjj1rjhtug" path="res://Resources/EscenasIntro/sodaboom logo.png" id="3_lvg3i"]
+[ext_resource type="Texture2D" uid="uid://btr3h886816wv" path="res://Resources/EscenasIntro/BotonesMenuPrincipal/BOTON SALIR IDLE 1.png" id="4_1v4jv"]
+[ext_resource type="Texture2D" uid="uid://c134jb0ftxd1f" path="res://Resources/EscenasIntro/BotonesMenuPrincipal/BOTON JUGAR IDLE 1.png" id="4_osntt"]
+[ext_resource type="Texture2D" uid="uid://buv4fx3krmytf" path="res://Resources/EscenasIntro/BotonesMenuPrincipal/BOTON JUGAR IDLE 2.png" id="5_qj836"]
+[ext_resource type="Texture2D" uid="uid://ca0ocdfrp2srm" path="res://Resources/EscenasIntro/BotonesMenuPrincipal/BOTON JUGAR IDLE 3.png" id="6_86cdo"]
+[ext_resource type="Texture2D" uid="uid://cd3bmx1fmpq1k" path="res://Resources/EscenasIntro/BotonesMenuPrincipal/BOTON JUGAR OVER 1.png" id="7_gncqn"]
+[ext_resource type="Texture2D" uid="uid://dsa1ynpyktwxs" path="res://Resources/EscenasIntro/BotonesMenuPrincipal/BOTON JUGAR OVER 2.png" id="8_m634e"]
+[ext_resource type="Texture2D" uid="uid://di8v2fco2u85i" path="res://Resources/EscenasIntro/BotonesMenuPrincipal/BOTON JUGAR OVER 3.png" id="9_su2dp"]
+[ext_resource type="Texture2D" uid="uid://b22kxor6ql61u" path="res://Resources/EscenasIntro/BotonesMenuPrincipal/BOTON JUGAR PRESS.png" id="10_vijod"]
+[ext_resource type="Texture2D" uid="uid://cidtl8yw61nk2" path="res://Resources/EscenasIntro/BotonesMenuPrincipal/BOTON SALIR IDLE 2.png" id="11_cuwaf"]
+[ext_resource type="Texture2D" uid="uid://bxu01dekg8nfo" path="res://Resources/EscenasIntro/BotonesMenuPrincipal/BOTON SALIR IDLE 3.png" id="12_c4wma"]
+[ext_resource type="Texture2D" uid="uid://dv6wny2jjbdct" path="res://Resources/EscenasIntro/BotonesMenuPrincipal/BOTON SALIR OVER 1.png" id="13_ds0bi"]
+[ext_resource type="Texture2D" uid="uid://dvdwovmii6x6o" path="res://Resources/EscenasIntro/BotonesMenuPrincipal/BOTON SALIR OVER 2.png" id="14_8dbts"]
+[ext_resource type="Texture2D" uid="uid://dfvindkcoduua" path="res://Resources/EscenasIntro/BotonesMenuPrincipal/BOTON SALIR OVER 3.png" id="15_27t71"]
+[ext_resource type="Texture2D" uid="uid://7y1u7pybunuc" path="res://Resources/EscenasIntro/BotonesMenuPrincipal/BOTON SALIR PRESS.png" id="16_6l655"]
+[ext_resource type="Texture2D" uid="uid://tug1wwq202rj" path="res://Resources/EscenasIntro/BurbujasMenuPrincipal/burbuja (1).png" id="17_patb4"]
+[ext_resource type="Texture2D" uid="uid://b6mgwekdn6kss" path="res://Resources/EscenasIntro/BurbujasMenuPrincipal/burbuja (2).png" id="18_s8v7p"]
+[ext_resource type="Texture2D" uid="uid://cd4j3erjfie4q" path="res://Resources/EscenasIntro/BurbujasMenuPrincipal/burbuja (3).png" id="19_w7by7"]
+[ext_resource type="Texture2D" uid="uid://b7lnoxy4publb" path="res://Resources/EscenasIntro/BurbujasMenuPrincipal/burbuja (4).png" id="20_dfohy"]
+[ext_resource type="Texture2D" uid="uid://dww708dmactlu" path="res://Resources/EscenasIntro/BurbujasMenuPrincipal/burbuja (5).png" id="21_6h0qt"]
+[ext_resource type="Texture2D" uid="uid://00h71faig56" path="res://Resources/EscenasIntro/BurbujasMenuPrincipal/burbuja (6).png" id="22_k6j4j"]
+[ext_resource type="Texture2D" uid="uid://cwstmw23b4b5v" path="res://Resources/EscenasIntro/BurbujasMenuPrincipal/burbuja (7).png" id="23_ba8oj"]
+[ext_resource type="Texture2D" uid="uid://dibb7ve3gf3hg" path="res://Resources/EscenasIntro/BurbujasMenuPrincipal/burbuja (8).png" id="24_0myh4"]
+[ext_resource type="Texture2D" uid="uid://bhy4h54b05xnk" path="res://Resources/EscenasIntro/BurbujasMenuPrincipal/burbuja (9).png" id="25_3hclb"]
+[ext_resource type="Texture2D" uid="uid://gebl4687atr" path="res://Resources/EscenasIntro/BurbujasMenuPrincipal/burbuja (10).png" id="26_l6f6y"]
+[ext_resource type="Texture2D" uid="uid://cmu8oh4wy7637" path="res://Resources/EscenasIntro/BurbujasMenuPrincipal/burbuja (11).png" id="27_j0wi2"]
+[ext_resource type="Texture2D" uid="uid://dd1n57tltsebj" path="res://Resources/EscenasIntro/BurbujasMenuPrincipal/burbuja (12).png" id="28_44x6r"]
+[ext_resource type="Texture2D" uid="uid://io3ifbnr0ktl" path="res://Resources/EscenasIntro/BurbujasMenuPrincipal/burbuja (13).jpg" id="29_tadqn"]
+[ext_resource type="Texture2D" uid="uid://4dmoygpubb2j" path="res://Resources/EscenasIntro/BurbujasMenuPrincipal/burbuja (14).png" id="30_lt3lq"]
+[ext_resource type="Texture2D" uid="uid://dkwg40i0p7nbd" path="res://Resources/EscenasIntro/BurbujasMenuPrincipal/burbuja (15).png" id="31_4b7fm"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qo7fj"]
-bg_color = Color(0.831373, 0.717647, 0, 1)
+[sub_resource type="SpriteFrames" id="SpriteFrames_04vqr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_patb4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_s8v7p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_w7by7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_dfohy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_6h0qt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_k6j4j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_ba8oj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_0myh4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_3hclb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_l6f6y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_j0wi2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_44x6r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_tadqn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_lt3lq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_4b7fm")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_no7n8"]
-bg_color = Color(0.97, 0, 0, 1)
+[sub_resource type="Animation" id="Animation_egv6t"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Jugar:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("4_osntt")]
+}
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mklgy"]
-bg_color = Color(1, 0.360743, 0.311098, 1)
+[sub_resource type="Animation" id="Animation_j73x5"]
+resource_name = "Idle"
+length = 0.4
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Jugar:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("4_osntt"), ExtResource("5_qj836"), ExtResource("6_86cdo"), ExtResource("5_qj836"), ExtResource("4_osntt")]
+}
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wa7wa"]
-bg_color = Color(0.6, 0.084, 0.084, 1)
+[sub_resource type="Animation" id="Animation_6qqya"]
+resource_name = "Hover"
+length = 0.4
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Jugar:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("7_gncqn"), ExtResource("8_m634e"), ExtResource("9_su2dp"), ExtResource("8_m634e"), ExtResource("7_gncqn")]
+}
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nd86l"]
-bg_color = Color(0.97, 0, 0, 1)
+[sub_resource type="Animation" id="Animation_tr01d"]
+resource_name = "Pressed"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Jugar:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("10_vijod"), ExtResource("10_vijod")]
+}
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0juia"]
-bg_color = Color(1, 0.360743, 0.311098, 1)
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_8buwy"]
+_data = {
+"Hover": SubResource("Animation_6qqya"),
+"Idle": SubResource("Animation_j73x5"),
+"Pressed": SubResource("Animation_tr01d"),
+"RESET": SubResource("Animation_egv6t")
+}
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6e1ha"]
-bg_color = Color(0.6, 0.084, 0.084, 1)
+[sub_resource type="Animation" id="Animation_3gyha"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Salir:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("4_1v4jv")]
+}
+
+[sub_resource type="Animation" id="Animation_sh166"]
+resource_name = "Idle"
+length = 0.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Salir:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.3, 0.5, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("4_1v4jv"), ExtResource("11_cuwaf"), ExtResource("12_c4wma"), ExtResource("11_cuwaf"), ExtResource("4_1v4jv")]
+}
+
+[sub_resource type="Animation" id="Animation_7xown"]
+resource_name = "Hover"
+length = 0.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Salir:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.3, 0.5, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("13_ds0bi"), ExtResource("14_8dbts"), ExtResource("15_27t71"), ExtResource("14_8dbts"), ExtResource("13_ds0bi")]
+}
+
+[sub_resource type="Animation" id="Animation_wabfy"]
+resource_name = "Pressed"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Salir:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("16_6l655"), ExtResource("16_6l655")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_yjyly"]
+_data = {
+"Hover": SubResource("Animation_7xown"),
+"Idle": SubResource("Animation_sh166"),
+"Pressed": SubResource("Animation_wabfy"),
+"RESET": SubResource("Animation_3gyha")
+}
 
 [node name="MenuPrincipal" type="Node2D"]
 script = ExtResource("1_vyhvx")
 
-[node name="Fondo" type="Panel" parent="."]
-offset_left = -5.0
-offset_top = -7.0
-offset_right = 1157.0
-offset_bottom = 655.0
-theme_override_styles/panel = SubResource("StyleBoxFlat_qo7fj")
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1155.0
+offset_bottom = 648.0
+color = Color(0.996078, 0.152941, 0.207843, 1)
 
-[node name="Titulo" type="Sprite2D" parent="."]
-position = Vector2(579, 303)
-rotation = -0.375158
-scale = Vector2(1.1894, 1.43581)
-texture = ExtResource("2_h8s4a")
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(203, 195)
+scale = Vector2(0.845833, 0.808333)
+sprite_frames = SubResource("SpriteFrames_04vqr")
+autoplay = "default"
 
-[node name="Carlo" type="Sprite2D" parent="."]
-position = Vector2(306, 219)
-scale = Vector2(0.295027, 0.304632)
-texture = ExtResource("3_cc0ae")
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
+position = Vector2(961, 193)
+scale = Vector2(0.845833, 0.808333)
+sprite_frames = SubResource("SpriteFrames_04vqr")
+autoplay = "default"
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
-offset_left = 818.0
-offset_top = 389.0
-offset_right = 948.0
-offset_bottom = 471.0
-scale = Vector2(2, 2.08)
+[node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="."]
+position = Vector2(843, 591)
+scale = Vector2(0.845833, 0.808333)
+sprite_frames = SubResource("SpriteFrames_04vqr")
+autoplay = "default"
 
-[node name="Jugar" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-theme_override_fonts/font = ExtResource("4_7tmib")
-theme_override_font_sizes/font_size = 31
-theme_override_styles/normal = SubResource("StyleBoxFlat_no7n8")
-theme_override_styles/hover = SubResource("StyleBoxFlat_mklgy")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_wa7wa")
-text = "JUGAR 
-"
+[node name="AnimatedSprite2D4" type="AnimatedSprite2D" parent="."]
+position = Vector2(291, 595)
+scale = Vector2(0.845833, 0.808333)
+sprite_frames = SubResource("SpriteFrames_04vqr")
+autoplay = "default"
 
-[node name="Salir" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-theme_override_fonts/font = ExtResource("4_7tmib")
-theme_override_font_sizes/font_size = 31
-theme_override_styles/normal = SubResource("StyleBoxFlat_nd86l")
-theme_override_styles/hover = SubResource("StyleBoxFlat_0juia")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_6e1ha")
-text = "SALIR 
-"
+[node name="SodaboomLogo" type="Sprite2D" parent="."]
+position = Vector2(569, 209)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("3_lvg3i")
 
-[connection signal="pressed" from="VBoxContainer/Jugar" to="." method="_on_jugar_pressed"]
-[connection signal="pressed" from="VBoxContainer/Salir" to="." method="_on_salir_pressed"]
+[node name="Jugar" type="Sprite2D" parent="."]
+position = Vector2(574.6, 423.45)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("4_osntt")
+
+[node name="Button" type="Button" parent="Jugar"]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -115.0
+offset_top = -60.0
+offset_right = 105.0
+offset_bottom = 60.0
+
+[node name="Salir" type="Sprite2D" parent="."]
+position = Vector2(578, 539)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("4_1v4jv")
+
+[node name="Button" type="Button" parent="Salir"]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -127.0
+offset_top = -80.0
+offset_right = 121.0
+offset_bottom = 80.0
+
+[node name="JugarAnimation" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_8buwy")
+}
+autoplay = "Idle"
+
+[node name="SalirAnimation" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_yjyly")
+}
+autoplay = "Idle"
+
+[node name="BurbujasAnimation" type="AnimationPlayer" parent="."]
+
+[connection signal="mouse_entered" from="Jugar/Button" to="." method="_on_BtnJugar_mouse_entered"]
+[connection signal="mouse_exited" from="Jugar/Button" to="." method="_on_BtnJugar_mouse_exited"]
+[connection signal="pressed" from="Jugar/Button" to="." method="_on_BtnJugar_pressed"]
+[connection signal="mouse_entered" from="Salir/Button" to="." method="_on_BtnSalir_mouse_entered"]
+[connection signal="mouse_exited" from="Salir/Button" to="." method="_on_BtnSalir_mouse_exited"]
+[connection signal="pressed" from="Salir/Button" to="." method="_on_BtnSalir_pressed"]

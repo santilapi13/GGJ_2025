@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c04qx1awueo53"
-path="res://.godot/imported/cara.png-b5b34d216295fb36b21c366ac5c6a33f.ctex"
+path="res://.godot/imported/cara.png-784ad96085f5cb197b035fd9a137050b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Sprites/SODERO/v1 NO/run/cara.png"
-dest_files=["res://.godot/imported/cara.png-b5b34d216295fb36b21c366ac5c6a33f.ctex"]
+source_file="res://Resources/Sprites/Sodero/v1 NO/run/cara.png"
+dest_files=["res://.godot/imported/cara.png-784ad96085f5cb197b035fd9a137050b.ctex"]
 
 [params]
 

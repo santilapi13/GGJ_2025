@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://5ip8d7h520qe"
-path="res://.godot/imported/fly soda cuerpo.png-8c4fa7f6966bdb3c10e818eb0100e61b.ctex"
+path="res://.godot/imported/fly soda cuerpo.png-2c58166c52bdbb7355b5682c60a2c223.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Sprites/SODERO/v2 fly/fly soda cuerpo.png"
-dest_files=["res://.godot/imported/fly soda cuerpo.png-8c4fa7f6966bdb3c10e818eb0100e61b.ctex"]
+source_file="res://Resources/Sprites/Sodero/v2 fly/fly soda cuerpo.png"
+dest_files=["res://.godot/imported/fly soda cuerpo.png-2c58166c52bdbb7355b5682c60a2c223.ctex"]
 
 [params]
 

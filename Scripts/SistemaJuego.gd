@@ -3,7 +3,7 @@ extends Control
 var niveles : Array[String] = [
 	"res://Scenes/Levels/nivel_1.tscn","res://Scenes/Levels/nivel_2.tscn","res://Scenes/Levels/nivel_3.tscn"
 	,"res://Scenes/Levels/nivel_4.tscn","res://Scenes/Levels/nivel_5.tscn","res://Scenes/Levels/nivel_6.tscn","res://Scenes/Levels/nivel_7.tscn"
-	,"res://Scenes/Levels/nivel_8.tscn"
+	,"res://Scenes/Levels/nivel_8.tscn", 
 ]
 var nivel_actual : int = -1
 signal reiniciar()
@@ -30,8 +30,8 @@ func siguiente_nivel():
 		nivel_actual += 1
 		cargar_escena(niveles[nivel_actual])
 	else:
-		cargar_escena("res://Scenes/Menues/MenuPrincipal.tscn")
-		print("GANASTE")
+		cargar_escena("res://Scenes/Menues/PantallaFinal.tscn")
+		SistemaAudio.reproducir_musica("loop_menu")
 
 func reiniciar_nivel():
 	SistemaAudio.reproducir_sonido("Fallo")

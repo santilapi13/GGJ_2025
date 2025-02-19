@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ckfk1jxwn4j"
-path="res://.godot/imported/caida tronco.png-3e878785e02e2f2a5159fa6a5d547797.ctex"
+path="res://.godot/imported/caida tronco.png-976d2c1838173363592f16e81dd1beed.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Sprites/SODERO/v2 caida/caida tronco.png"
-dest_files=["res://.godot/imported/caida tronco.png-3e878785e02e2f2a5159fa6a5d547797.ctex"]
+source_file="res://Resources/Sprites/Sodero/v2 caida/caida tronco.png"
+dest_files=["res://.godot/imported/caida tronco.png-976d2c1838173363592f16e81dd1beed.ctex"]
 
 [params]
 

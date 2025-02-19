@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cg7x4kdxmr8q1"
-path="res://.godot/imported/champ brazos.png-79159792de4e37d2287bcc5e8041823c.ctex"
+path="res://.godot/imported/champ brazos.png-6ec778a985700aedd90edfb77ceb2ef7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Sprites/SODERO/v2 brazo bebidas/champ brazos.png"
-dest_files=["res://.godot/imported/champ brazos.png-79159792de4e37d2287bcc5e8041823c.ctex"]
+source_file="res://Resources/Sprites/Sodero/v2 brazo bebidas/champ brazos.png"
+dest_files=["res://.godot/imported/champ brazos.png-6ec778a985700aedd90edfb77ceb2ef7.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b6dljgpfht31k"
-path="res://.godot/imported/run soda 3.png-b860859d72a2b9a7473a5a915109d833.ctex"
+path="res://.godot/imported/run soda 3.png-98f8f3276681782e3aa0d166ea54cefe.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Sprites/SODERO/v2 run/run soda 3.png"
-dest_files=["res://.godot/imported/run soda 3.png-b860859d72a2b9a7473a5a915109d833.ctex"]
+source_file="res://Resources/Sprites/Sodero/v2 run/run soda 3.png"
+dest_files=["res://.godot/imported/run soda 3.png-98f8f3276681782e3aa0d166ea54cefe.ctex"]
 
 [params]
 

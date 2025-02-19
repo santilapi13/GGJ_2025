@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://splu5euukwg"
-path="res://.godot/imported/fly gaseosa.png-d180dff505383ec24b38aaca35f6e50a.ctex"
+path="res://.godot/imported/fly gaseosa.png-381cead715ede263e5825f1716b47d63.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Sprites/SODERO/v2 fly/fly gaseosa.png"
-dest_files=["res://.godot/imported/fly gaseosa.png-d180dff505383ec24b38aaca35f6e50a.ctex"]
+source_file="res://Resources/Sprites/Sodero/v2 fly/fly gaseosa.png"
+dest_files=["res://.godot/imported/fly gaseosa.png-381cead715ede263e5825f1716b47d63.ctex"]
 
 [params]
 

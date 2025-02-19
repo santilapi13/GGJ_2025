@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://2754mr6n17j4"
-path="res://.godot/imported/fly soda cabeza 1.png-343ea855700c8991167c1ec26c3bcbfd.ctex"
+path="res://.godot/imported/fly soda cabeza 1.png-3ce04fa0a287979551dc8768389ded9b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Sprites/SODERO/v2 fly/fly soda cabeza 1.png"
-dest_files=["res://.godot/imported/fly soda cabeza 1.png-343ea855700c8991167c1ec26c3bcbfd.ctex"]
+source_file="res://Resources/Sprites/Sodero/v2 fly/fly soda cabeza 1.png"
+dest_files=["res://.godot/imported/fly soda cabeza 1.png-3ce04fa0a287979551dc8768389ded9b.ctex"]
 
 [params]
 

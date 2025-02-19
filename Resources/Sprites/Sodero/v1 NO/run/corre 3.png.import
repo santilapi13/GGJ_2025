@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bpev3fegk8rdr"
-path="res://.godot/imported/corre 3.png-3cad7d3266fbd8ffe55d858b65129fb1.ctex"
+path="res://.godot/imported/corre 3.png-eadae6cf75d82c05824bfe6bfe4773cb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Sprites/SODERO/v1 NO/run/corre 3.png"
-dest_files=["res://.godot/imported/corre 3.png-3cad7d3266fbd8ffe55d858b65129fb1.ctex"]
+source_file="res://Resources/Sprites/Sodero/v1 NO/run/corre 3.png"
+dest_files=["res://.godot/imported/corre 3.png-eadae6cf75d82c05824bfe6bfe4773cb.ctex"]
 
 [params]
 

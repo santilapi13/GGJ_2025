@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://qfte7uidbkvi"
-path="res://.godot/imported/soda brazo 1.png-596f2725589cbd36d12967de2112ee55.ctex"
+path="res://.godot/imported/soda brazo 1.png-96176b6f78b56673e3bf607c14947200.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Sprites/SODERO/v2 brazo bebidas/soda brazo 1.png"
-dest_files=["res://.godot/imported/soda brazo 1.png-596f2725589cbd36d12967de2112ee55.ctex"]
+source_file="res://Resources/Sprites/Sodero/v2 brazo bebidas/soda brazo 1.png"
+dest_files=["res://.godot/imported/soda brazo 1.png-96176b6f78b56673e3bf607c14947200.ctex"]
 
 [params]
 

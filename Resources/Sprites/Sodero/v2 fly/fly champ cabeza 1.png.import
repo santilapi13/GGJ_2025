@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://drx0jacgv0rnk"
-path="res://.godot/imported/fly champ cabeza 1.png-dfb3b8e6ca0c9fc31c6c7b66bd9eb499.ctex"
+path="res://.godot/imported/fly champ cabeza 1.png-f8b5fdd5aa34fc64176f0d9ac9375ba7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Sprites/SODERO/v2 fly/fly champ cabeza 1.png"
-dest_files=["res://.godot/imported/fly champ cabeza 1.png-dfb3b8e6ca0c9fc31c6c7b66bd9eb499.ctex"]
+source_file="res://Resources/Sprites/Sodero/v2 fly/fly champ cabeza 1.png"
+dest_files=["res://.godot/imported/fly champ cabeza 1.png-f8b5fdd5aa34fc64176f0d9ac9375ba7.ctex"]
 
 [params]
 

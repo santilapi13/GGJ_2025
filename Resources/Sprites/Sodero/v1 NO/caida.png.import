@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://upqewaetyqgw"
-path="res://.godot/imported/caida.png-454eab6663a20b1b3aad5035fa0b2af3.ctex"
+path="res://.godot/imported/caida.png-233fcf5cbf1e10ed4f4c8d53287664e2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Sprites/SODERO/v1 NO/caida.png"
-dest_files=["res://.godot/imported/caida.png-454eab6663a20b1b3aad5035fa0b2af3.ctex"]
+source_file="res://Resources/Sprites/Sodero/v1 NO/caida.png"
+dest_files=["res://.godot/imported/caida.png-233fcf5cbf1e10ed4f4c8d53287664e2.ctex"]
 
 [params]
 

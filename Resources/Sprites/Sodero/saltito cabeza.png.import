@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c12xawg0epxi5"
-path="res://.godot/imported/saltito cabeza.png-9bd899da134de55d2583bf99d22162f1.ctex"
+path="res://.godot/imported/saltito cabeza.png-e1ad618bbd5d3228ff4e61111b15213f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Sprites/SODERO/saltito cabeza.png"
-dest_files=["res://.godot/imported/saltito cabeza.png-9bd899da134de55d2583bf99d22162f1.ctex"]
+source_file="res://Resources/Sprites/Sodero/saltito cabeza.png"
+dest_files=["res://.godot/imported/saltito cabeza.png-e1ad618bbd5d3228ff4e61111b15213f.ctex"]
 
 [params]
 

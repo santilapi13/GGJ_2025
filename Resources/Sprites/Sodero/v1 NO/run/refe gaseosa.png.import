@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://r460072sv7kk"
-path="res://.godot/imported/refe gaseosa.png-9da7b8c61abd8dfeb1fde0b24c3ab93b.ctex"
+path="res://.godot/imported/refe gaseosa.png-fc46110e4b81aa505e06df7f8255364a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Sprites/SODERO/v1 NO/run/refe gaseosa.png"
-dest_files=["res://.godot/imported/refe gaseosa.png-9da7b8c61abd8dfeb1fde0b24c3ab93b.ctex"]
+source_file="res://Resources/Sprites/Sodero/v1 NO/run/refe gaseosa.png"
+dest_files=["res://.godot/imported/refe gaseosa.png-fc46110e4b81aa505e06df7f8255364a.ctex"]
 
 [params]
 

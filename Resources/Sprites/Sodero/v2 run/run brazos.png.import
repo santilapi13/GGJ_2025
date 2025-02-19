@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bbqm0skw7hcvg"
-path="res://.godot/imported/run brazos.png-536255210b2e9db24d486c46345c590f.ctex"
+path="res://.godot/imported/run brazos.png-bb9f302bbfba4bf02b5e135d75babc51.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Sprites/SODERO/v2 run/run brazos.png"
-dest_files=["res://.godot/imported/run brazos.png-536255210b2e9db24d486c46345c590f.ctex"]
+source_file="res://Resources/Sprites/Sodero/v2 run/run brazos.png"
+dest_files=["res://.godot/imported/run brazos.png-bb9f302bbfba4bf02b5e135d75babc51.ctex"]
 
 [params]
 

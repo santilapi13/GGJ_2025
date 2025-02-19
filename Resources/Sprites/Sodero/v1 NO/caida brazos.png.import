@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://uqkkcwdmws2o"
-path="res://.godot/imported/caida brazos.png-61a57bfe14a448ae1c9436a9d2876c04.ctex"
+path="res://.godot/imported/caida brazos.png-82fc5ecb70713ff8877edb622d5228df.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Sprites/SODERO/v1 NO/caida brazos.png"
-dest_files=["res://.godot/imported/caida brazos.png-61a57bfe14a448ae1c9436a9d2876c04.ctex"]
+source_file="res://Resources/Sprites/Sodero/v1 NO/caida brazos.png"
+dest_files=["res://.godot/imported/caida brazos.png-82fc5ecb70713ff8877edb622d5228df.ctex"]
 
 [params]
 

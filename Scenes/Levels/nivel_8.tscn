@@ -15,13 +15,13 @@ height = 2244.52
 size = Vector2(2663, 75)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_k3im0"]
-size = Vector2(334, 2018)
+size = Vector2(334, 2983)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_55ce4"]
 size = Vector2(587.5, 259)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8kpjo"]
-size = Vector2(325.5, 2761.5)
+size = Vector2(325.5, 3504.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fcm60"]
 size = Vector2(608, 102)
@@ -85,7 +85,7 @@ position = Vector2(1847, 284)
 [node name="Pared" type="StaticBody2D" parent="Colisiones"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Colisiones/Pared"]
-position = Vector2(65, -217)
+position = Vector2(65, -699.5)
 shape = SubResource("RectangleShape2D_k3im0")
 
 [node name="Pared2" type="StaticBody2D" parent="Colisiones"]
@@ -97,7 +97,7 @@ shape = SubResource("RectangleShape2D_55ce4")
 [node name="Pared4" type="StaticBody2D" parent="Colisiones"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Colisiones/Pared4"]
-position = Vector2(2139.75, -83.25)
+position = Vector2(2139.75, -454.75)
 shape = SubResource("RectangleShape2D_8kpjo")
 
 [node name="Pared5" type="StaticBody2D" parent="Colisiones"]
